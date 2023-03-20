@@ -22,5 +22,8 @@
   },
   "showIndentGuide": true,
   "autoConvertHtml": false,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "userIgnoreFilters": [
+    "export/"
+  ]
 }

@@ -12,7 +12,8 @@
     "big-math",
     "banner-fix",
     "fix_highligh",
-    "kanban"
+    "kanban",
+    "list_padding"
   ],
   "showViewHeader": true,
   "theme": "system"

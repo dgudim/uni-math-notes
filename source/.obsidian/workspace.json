@@ -28,14 +28,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - trees.md",
+                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md"
+                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md"
               }
             }
           }
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home.md",
+                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Home.md",
+                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,8 +214,16 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "6d132e6a9b840c22",
+  "active": "d75217480e453893",
   "lastOpenFiles": [
+    "export/uni/discrete-math/graphs/seduRyhw5",
+    "export/uni/discrete-math/graphs/recode-TKS8st.tmp",
+    "uni/Discrete math/Graphs/Graphs - planarity.md",
+    "uni/Discrete math/Graphs/Graphs - connectivity.md",
+    "uni/Discrete math/Graphs/Graphs - basics.md",
+    "uni/Discrete math/Graphs/Graphs - trees.md",
+    "uni/Discrete math/Graphs/Graphs - morphism.md",
+    "Home.md",
     "export/uni/discrete-math/graphs/recode-zELgmW.tmp",
     "export/uni/discrete-math/graphs/recode-8ov2Qr.tmp",
     "export/uni/discrete-math/graphs/recode-yO1iS9.tmp",
@@ -224,18 +233,10 @@
     "export/uni/discrete-math/graphs/recode-5A4noT.tmp",
     "export/uni/discrete-math/graphs/recode-7FX9Uk.tmp",
     "export/uni/discrete-math/graphs/sedrbQQCl",
-    "export/uni/discrete-math/graphs/sedQhwq9s",
-    "export/uni/discrete-math/graphs/seddI5f72",
-    "uni/Discrete math/Graphs/Graphs - planarity.md",
     "uni/Discrete math/Graphs/Graphs - operations.md",
-    "uni/Discrete math/Graphs/Graphs - morphism.md",
     "uni/Discrete math/Graphs/Graphs - metrics2.md",
     "uni/Discrete math/Graphs/Graphs - metrics.md",
-    "uni/Discrete math/Graphs/Graphs - connectivity.md",
-    "uni/Discrete math/Graphs/Graphs - basics.md",
-    "Home.md",
     "conflict-files-obsidian-git.md",
-    "uni/Discrete math/Graphs/Graphs - trees.md",
     "Films_etc/Watched.md",
     "Films_etc/ToWatch.md",
     "LaTeX docs/OLxcolorList2.png",
