@@ -1,0 +1,48 @@
+{
+  "tag-colors": [
+    {
+      "tagKey": "#bug",
+      "color": "rgba(251, 73, 52, 1)",
+      "backgroundColor": "rgba(204, 34, 29, 0.23)"
+    },
+    {
+      "tagKey": "#feature",
+      "color": "rgba(142, 192, 124, 1)",
+      "backgroundColor": "rgba(104, 158, 106, 0.23)"
+    },
+    {
+      "tagKey": "#visual",
+      "color": "rgba(250, 189, 47, 1)",
+      "backgroundColor": "rgba(214, 154, 32, 0.23)"
+    },
+    {
+      "tagKey": "#not important",
+      "color": "rgba(131, 165, 152, 1)",
+      "backgroundColor": "rgba(69, 132, 135, 0.23)"
+    },
+    {
+      "tagKey": "#important",
+      "color": "rgba(254, 128, 25, 1)",
+      "backgroundColor": "rgba(214, 95, 15, 0.23)"
+    },
+    {
+      "tagKey": "#minor",
+      "color": "rgba(184, 187, 38, 1)",
+      "backgroundColor": "rgba(153, 153, 26, 0.23)"
+    },
+    {
+      "tagKey": "#investigation needed",
+      "color": "rgba(211, 134, 155, 1)",
+      "backgroundColor": "rgba(176, 97, 132, 0.23)"
+    }
+  ],
+  "new-line-trigger": "enter",
+  "date-colors": [],
+  "append-archive-date": true,
+  "archive-with-date": true,
+  "archive-date-separator": "|",
+  "date-picker-week-start": 1,
+  "show-checkboxes": true,
+  "hide-tags-display": false,
+  "hide-tags-in-title": false
+}

@@ -1,0 +1,44 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"uni/Discrete math\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:uni/English",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:/",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -1.5,
+  "nodeSizeMultiplier": 2.33307291666667,
+  "lineSizeMultiplier": 3.548834375,
+  "collapse-forces": false,
+  "centerStrength": 0.200520833333333,
+  "repelStrength": 8.90625,
+  "linkStrength": 0.4921875,
+  "linkDistance": 298,
+  "scale": 0.35008020894441944,
+  "close": false
+}

@@ -1,0 +1,23 @@
+{
+  "statusBar": [
+    {
+      "prefix": "",
+      "suffix": " words",
+      "metric": {
+        "type": 0,
+        "counter": 0
+      }
+    },
+    {
+      "prefix": " ",
+      "suffix": " chars",
+      "metric": {
+        "type": 0,
+        "counter": 1
+      }
+    }
+  ],
+  "altBar": [],
+  "countComments": false,
+  "collectStats": false
+}

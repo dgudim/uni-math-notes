@@ -1,0 +1,26 @@
+{
+  "spellcheckLanguages": [
+    "en-US",
+    "ru"
+  ],
+  "trashOption": "none",
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./attachements",
+  "alwaysUpdateLinks": true,
+  "livePreview": true,
+  "spellcheck": true,
+  "showLineNumber": false,
+  "strictLineBreaks": false,
+  "readableLineLength": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showIndentGuide": true,
+  "autoConvertHtml": false,
+  "showInlineTitle": true
+}
