@@ -191,8 +191,8 @@ $G = (\{V\}, \emptyset)$ - **trivials**
 
 > If a graph G has $$
 \begin{flalign*}
-& \frac{n(n-1)}{n} &
-\end{flalign*}$$edges is is **complete** ($K_{n}$)
+& \frac{n(n-1)}{2} &
+\end{flalign*}$$[[Graphs - basics#Undirected graph|edge]] is is **complete** ($K_{n}$)
 
 ```dot
 graph neato {
@@ -210,10 +210,10 @@ node [shape = circle,
 
 edge [color = grey]
 a -- {b c d e}
-b -- {a c d e}
-c -- {a b d e}
-d -- {a b c e}
-e -- {a b c d}
+b -- {c d e}
+c -- {d e}
+d -- {e}
+
 }
 ```
 

@@ -5492,7 +5492,6 @@ var transforms_default = transforms;
 
 // src/main.ts
 var _ = __toESM(require_lodash());
-var import_types = require("util/types");
 var DEFAULT_SETTINGS = {
   scriptDir: "advpaste"
 };
@@ -5511,8 +5510,7 @@ async function executePaste(transform, editor, view) {
   } else {
     throw new Error("Unsupported input type");
   }
-  if ((0, import_types.isPromise)(result))
-    result = await result;
+  result = await Promise.resolve(result);
   if (typeof result == "string")
     editor.replaceSelection(result);
   else if ((result == null ? void 0 : result.kind) == "ok") {

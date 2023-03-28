@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"uni/Discrete math\"",
@@ -22,23 +22,30 @@
       }
     },
     {
+      "query": "path:\"uni/Computer architecture\"",
+      "color": {
+        "a": 1,
+        "rgb": 6084290
+      }
+    },
+    {
       "query": "path:/",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 6084188
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": -1.5,
   "nodeSizeMultiplier": 2.33307291666667,
   "lineSizeMultiplier": 3.548834375,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.200520833333333,
   "repelStrength": 8.90625,
   "linkStrength": 0.4921875,
   "linkDistance": 298,
-  "scale": 0.35008020894441944,
+  "scale": 0.11954343285057298,
   "close": false
 }

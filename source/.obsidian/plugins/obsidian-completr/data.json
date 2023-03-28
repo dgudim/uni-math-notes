@@ -1,11 +1,11 @@
 {
   "characterRegex": "a-zA-ZöäüÖÄÜß",
   "maxLookBackDistance": 50,
-  "autoFocus": true,
+  "autoFocus": false,
   "autoTrigger": true,
   "minWordLength": 2,
   "minWordTriggerLength": 3,
-  "wordInsertionMode": "Ignore-Case & Replace",
+  "wordInsertionMode": "Ignore-Case & Append",
   "ignoreDiacriticsWhenFiltering": false,
   "latexProviderEnabled": true,
   "latexTriggerInCodeBlocks": true,

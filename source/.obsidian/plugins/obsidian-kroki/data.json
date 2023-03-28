@@ -8,10 +8,10 @@
       "obsidianBlockName": "blockdiag",
       "description": "block diag !!",
       "url": "https://github.com/blockdiag/blockdiag",
-      "enabled": false,
+      "enabled": true,
       "toggle": {
         "disabled": false,
-        "on": false,
+        "on": true,
         "toggleEl": {}
       }
     },
@@ -34,10 +34,10 @@
       "obsidianBlockName": "bytefield",
       "description": "",
       "url": "https://github.com/Deep-Symmetry/bytefield-svg/",
-      "enabled": false,
+      "enabled": true,
       "toggle": {
         "disabled": false,
-        "on": false,
+        "on": true,
         "toggleEl": {}
       }
     },
@@ -86,10 +86,10 @@
       "obsidianBlockName": "packetdiag",
       "description": "",
       "url": "https://github.com/blockdiag/nwdiag",
-      "enabled": false,
+      "enabled": true,
       "toggle": {
         "disabled": false,
-        "on": false,
+        "on": true,
         "toggleEl": {}
       }
     },
@@ -99,10 +99,10 @@
       "obsidianBlockName": "rackdiag",
       "description": "",
       "url": "https://github.com/blockdiag/nwdiag",
-      "enabled": false,
+      "enabled": true,
       "toggle": {
         "disabled": false,
-        "on": false,
+        "on": true,
         "toggleEl": {}
       }
     },

@@ -619,7 +619,7 @@ f -- a
 > $C_{4}=\{v_{5}, v_{1}, v_{3}, v_{4}, v_{5}\}$
 > $C_{5}=\{v_{1}, v_{4}, v_{3}, v_{1}\}$
 
-1. Let's enumerate the edges: 
+1. Enumerate the [[Graphs - basics#Undirected graph|edges]] of $K_{5}$: 
 	- $\{v_{1}, v_{2}\} - 1$
 	- $\{v_{1}, v_{3}\} - 2$
 	- $\{v_{1}, v_{4}\} - 3$
@@ -631,7 +631,7 @@ f -- a
 	- $\{v_{3}, v_{5}\} - 9$
 	- $\{v_{4}, v_{5}\} - 10$
 
-2. Make vectors for every cycle and fill the table
+2. Make vectors for *every* [[#Cycle|cycle]] and fill the table
 	- [[Graphs - basics#Undirected graph|Edge]] $\{v_{1}, v_{2}\}$ is present in $C_{1}$ and $C_{2}$ but in *reverse order*, we write *-1* in the table for those [[#Cycle|cycles]]
 	- [[Graphs - basics#Undirected graph|Edge]] $\{v_{1}, v_{2}\}$ is *not present* in any other [[#Cycle|cycles]], we write *0* in the table for those [[#Cycle|cycles]]
 	- [[Graphs - basics#Undirected graph|Edge]] $\{v_{1}, v_{3}\}$ is present in $C_{4}$ in the *same order*, we write *1* in the table for this [[#Cycle|cycle]]
@@ -646,7 +646,7 @@ f -- a
 
 3. Now we find the *rank* of the matrix
 
-> After simplification we get *4* **independent** cycles
+> After simplification we get *4* **independent** [[#Cycle|cycles]]
 
 |         |  1  |  2  |  3  |  4  |
 | ------- |:---:|:---:|:---:|:---:|

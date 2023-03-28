@@ -713,7 +713,7 @@ $$
 # Homeomorphism (topological [[#Isomorphism|isomorphism]])
 
 > [!definition] 
-> Graphs $G$ and $G'$ are called **homeomorphic**, if they can be [[#Derived graph|derived]] derived from the same graph
+> Graphs $G$ and $G'$ are called **homeomorphic**, if they can be [[#Derived graph|derived]] from the same graph
 
 > $G_{2}$ and $G_{3}$ are **homeomorphic**, they can be both [[#Derived graph|derived]] from $G_{1}$ by adding [[#Extension|extensions]] $5$ and $6$ respectively
 

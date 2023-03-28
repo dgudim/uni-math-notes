@@ -24,5 +24,7 @@
   "obsidian-completr",
   "obsidian-tikzjax",
   "obsidian-latex-suite",
-  "webpage-html-export"
+  "webpage-html-export",
+  "obsidian-asciidoc-blocks",
+  "obsidian-kroki"
 ]
