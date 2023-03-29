@@ -38,13 +38,13 @@
             }
           },
           {
-            "id": "806907ae434a9415",
+            "id": "134d163d3b031ab2",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - shortest path.md",
+                "file": "uni/Computer architecture/Processor.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -53,27 +53,12 @@
             }
           },
           {
-            "id": "9c3612e330c78658",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Computer architecture/Data representation.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "7b413f43749847ac",
+            "id": "3f1c963bcbd6101d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - basics.md",
+                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -81,7 +66,7 @@
             }
           },
           {
-            "id": "ad4e1f1e6a5045eb",
+            "id": "73490fcadc1935ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,126 +77,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "be742b66fdd85a25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - metrics2.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7de58fac1907959a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - morphism.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b661c76598d8a52",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - operations.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "67c132d0ad3f355e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - planarity.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2f516f409c5f7bd0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - operations.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7b041671454cd626",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - shortest path.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f3297c434afb61f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - shortest path.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1215fcb31b88801e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - trees.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "134d163d3b031ab2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -257,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md"
+                "file": "uni/Discrete math/Graphs/Graphs - metrics.md"
               }
             }
           }
@@ -282,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
+                "file": "uni/Discrete math/Graphs/Graphs - metrics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -299,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
+                "file": "uni/Discrete math/Graphs/Graphs - metrics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -374,7 +242,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 343.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -389,31 +257,32 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "134d163d3b031ab2",
+  "active": "73490fcadc1935ba",
   "lastOpenFiles": [
+    "export/uni/discrete-math/graphs/recode-q04jm2.tmp",
+    "export/uni/discrete-math/graphs/recode-Ufq7BX.tmp",
+    "Home.md",
+    "uni/Discrete math/Graphs/Graphs - connectivity.md",
+    "uni/Computer architecture/Processor.md",
+    "uni/Computer architecture/Data representation.md",
+    "uni/Discrete math/Graphs/Graphs - shortest path.md",
+    "uni/Discrete math/Graphs/Graphs - metrics2.md",
+    "uni/Discrete math/Graphs/Graphs - metrics.md",
+    "uni/Discrete math/Graphs/Graphs - operations.md",
+    "uni/Discrete math/Graphs/Graphs - basics.md",
+    "uni/Discrete math/Graphs/Graphs - trees.md",
+    "export/README.md",
     "export/uni/discrete-math/graphs/recode-otQJB5.tmp",
     "export/uni/discrete-math/graphs/recode-xIIxOy.tmp",
     "export/uni/discrete-math/graphs/recode-of5ebJ.tmp",
-    "uni/Discrete math/Graphs/Graphs - trees.md",
-    "uni/Discrete math/Graphs/Graphs - shortest path.md",
     "export/uni/discrete-math/graphs/recode-bnkP2s.tmp",
     "export/uni/discrete-math/graphs/recode-7bHQFS.tmp",
     "export/uni/discrete-math/graphs/recode-Nnw6pa.tmp",
     "export/uni/discrete-math/graphs/recode-FlVJap.tmp",
     "export/uni/discrete-math/graphs/recode-5wODtl.tmp",
     "export/uni/discrete-math/graphs/recode-tFKtvl.tmp",
-    "export/uni/discrete-math/graphs/recode-JPWOts.tmp",
     "uni/Discrete math/Graphs/Graphs - planarity.md",
-    "uni/Discrete math/Graphs/Graphs - operations.md",
     "uni/Discrete math/Graphs/Graphs - morphism.md",
-    "uni/Discrete math/Graphs/Graphs - metrics2.md",
-    "uni/Discrete math/Graphs/Graphs - metrics.md",
-    "uni/Discrete math/Graphs/Graphs - basics.md",
-    "uni/Discrete math/Graphs/Graphs - connectivity.md",
-    "Home.md",
-    "export/uni/discrete-math/graphs/recode-KWQ7DA.tmp",
-    "uni/Computer architecture/Data representation.md",
-    "uni/Computer architecture/Processor.md",
     "uni/Computer architecture/attachements/positional_interpretation.png",
     "uni/Computer architecture/attachements/image-asset.png",
     "uni/Computer architecture/attachements/endianness_had.webp",
@@ -423,7 +292,6 @@
     "Reference.md",
     "Scheduler.md",
     "uni/English/ethics/Transcript.md",
-    "export/README.md",
     "conflict-files-obsidian-git.md",
     "Films_etc/Watched.md",
     "Films_etc/ToWatch.md",

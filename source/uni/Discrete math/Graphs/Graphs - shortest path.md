@@ -33,12 +33,13 @@
 
 ## Algorithms
 
-1. **Dijkstra's algorithm** - solves the [[#Single-source|single-source]] problem with <u>non-negative edge weight</u>
+1. [[#Dijkstra's algorithm]] - solves the [[#Single-source|single-source]] problem with <u>non-negative edge weight</u>
 2. **Bellman–Ford algorithm** - solves the [[#Single-source|single-source]] problem if edge <u>weights may be negative</u>
 3. **A* search algorithm** - solves for [[#All-pairs|single-pair]] shortest path using heuristics to try to speed up the search
-4. **Floyd–Warshall algorithm** - solves [[#All-pairs|all-pairs]] shortest paths
+4. [[#Floyd-Warshall algorithm]] - solves [[#All-pairs|all-pairs]] shortest paths
 5. **Johnson's algorithm** - solves [[#All-pairs|all-pairs]] shortest paths, and may be faster than *Floyd–Warshall* on sparse graphs
 6. **Viterbi algorithm** - the shortest stochastic path problem with an additional probabilistic weight on each node 
+
 > [!note] 
 >  - <u>The Stochastic Shortest Path problem</u> generalizes the classic deterministic shortest path problem
 

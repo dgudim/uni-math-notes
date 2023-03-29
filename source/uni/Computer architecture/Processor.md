@@ -1,8 +1,10 @@
 # Processor Terminology
 
-- The term **processor** and computational engine refer broadly to any mechanism that drives *computation*
-- CPUs exist in wide varieties and complexities
-- **Processor** is key element in all computational systemd
+> [!definition] 
+> 
+> - The term **processor** and computational engine refer broadly to any mechanism that drives *computation*
+> - CPUs exist in wide varieties and complexities
+> - **Processor** is key element in all computational systems
 
 - $ Also see: [[#Programmable device|programmable device]]
 
@@ -171,10 +173,12 @@ dm -> {cpu, io}
 
 ## Fetch-execute cycle
 
-- Basis of [[#Programmable device|programmable]] *processors*
-- Allows the [[#Processor Terminology|processor]] to *move through program* steps *automatically*
-- Implemented by processor's hardware
-- At some level, every [[#Programmable device|programmable]] processor implements a **fetch-execute** cycle
+> [!definition] 
+> 
+> - Basis of [[#Programmable device|programmable]] *processors*
+> - Allows the [[#Processor Terminology|processor]] to *move through program* steps *automatically*
+> - Implemented by processor's hardware
+> - At some level, every [[#Programmable device|programmable]] processor implements a **fetch-execute** cycle
 
 ### Fetch-execute algorithm
 
@@ -183,6 +187,77 @@ dm -> {cpu, io}
 - Perform the *operation* specified by the [[#Parts on an instruction|opcode]] 
 - Perform memory *read* or *write*, if needed
 - Store the result back to the [[#Registers|registers]]
+
+## Instruction pipeline
+
+> [!definition] 
+> 
+> - A major idea in [[#Processor Terminology|processor]] design
+> - Also called **execution pipeline**
+> - $ Optimizes performance
+> - Typically used with [[#RISC]] instruction set
+
+### Pipeline features
+
+- Transparent to programmer
+- Speed
+	- All stages operate *in parallel*
+	- Given stage can start to process a new instruction *as soon as current instruction finishes*
+	- @ Effect: *N-stage pipeline* van operate on *N* instructions simultaneously
+	- $ Result: 
+		- One instruction completes *every time pipeline moves*
+		- For [[#RISC]] [[#Processor Terminology|processor]], one instruction on *every clock cycle* (instead of 5)
+- ! Stalls if item is not available when a stage needs it
+	- Consider code that
+		- Performs *addition* and *subtraction*
+		- Uses [[#Registers|registers]] from *A* to *E* for [[#Parts on an instruction|operands]] 
+		- Instruction sequence
+			- $A+B \to C$
+			- $E-C \to D$ <-- This instruction must wait for *C* to be computed
+	- *Pipeline* stall can also occur on
+		- *I/O* access
+		- External storage access (memory reference)
+		- [[#Roles|Coprocessor]] invocation
+
+### Approach
+
+- Build *separate hardware blocks* for each step of the [[#Fetch-execute cycle|fetch-execute cycle]]
+- Arrange hardware to *pass an instruction through the sequence* of hardware blocks
+- Allow step *K* of instruction to execute while step *K-1* of next instruction executes
+
+```mermaid
+graph LR;
+A ==> B ==> C ==> D ==> E
+subgraph "stage 1"
+A(fetch\nnext\ninstruction)
+end
+subgraph "stage 2"
+B(decode and\nfetch operands)
+end
+subgraph "stage 3"
+C(Perform\noperation)
+end
+subgraph "stage 4"
+D(Read/write\nmemory)
+end
+subgraph "stage 5"
+E(Store\nresult)
+end
+```
+
+- Instructions passing through a 5-stage *pipeline*.
+- Once the *pipeline* is filled, each stage is busy on each clock cycle
+
+| clock | stage 1  | stage 2  | stage 3  | stage 4  | stage 5  |
+| ----- | -------- | -------- | -------- | -------- | -------- |
+| 1     | instr. 1 |          |          |          |          |
+| 2     | instr. 2 | instr. 1 |          |          |          |
+| 3     | instr. 3 | instr. 2 | instr. 1 |          |          |
+| 4     | instr. 4 | instr. 3 | instr. 2 | instr. 1 |          |
+| 5     | instr. 5 | instr. 4 | instr. 3 | instr. 2 | instr. 1 |
+| 6     | instr. 6 | instr. 5 | instr. 4 | instr. 3 | instr. 2 |
+| 7     | instr. 7 | instr. 6 | instr. 5 | instr. 4 | instr. 3 |
+| 8     | instr. 8 | instr. 7 | instr. 6 | instr. 5 | instr. 4 |
 
 ## Program translation
 
@@ -329,7 +404,8 @@ graph TB;
 
 ### CISC
 
-> Complex Instruction Set Computer
+> [!definition] 
+> **C**omplex **I**nstruction **S**et **C**omputer
 
 - *Many instructions* (often *hundreds*)
 - Given instruction can require *arbitrary time to compute*
@@ -341,7 +417,8 @@ graph TB;
 
 ### RISC
 
-> Reduced Instruction Set Computer
+> [!definition] 
+> **R**educed **I**nstruction **S**et **C**omputer
 
 - *Few instructions* (typically *32* or *64*)
 - Each instruction executes in *one clock cycle*
@@ -444,4 +521,3 @@ graph TB;
 		- Start with *Y* and *Z* in the same bank
 		- Before adding *Y* and *Z*, copy one to another [[#Registers|register]] [[#Register banks|bank]]
 
-	

@@ -3,7 +3,7 @@
 
 ## Distance between vertices
 
-> **Distance between 2 [[Graphs - basics#Directed graphs|vertices]]** is the *length* of shortest [[Graphs - connectivity#Path|path]] connecting these vertices. 
+> **Distance between 2 [[Graphs - basics#Directed graphs|vertices]]** is the [[Graphs - connectivity#Length of the path|length]] of shortest [[Graphs - connectivity#Path|path]] connecting these vertices. 
 > Notion: $\rho (u,w)$ 
 
 > [!note] 
@@ -238,14 +238,19 @@ flexGrow=1.2
 
 ## Diametrical circuit
 
-> A simple [[Graphs - connectivity#Circuit|circuit]] is **diametrical** if it's [[#Length of the path|length]] is equal to the **diameter** and is the shortest path connecting it's [[Graphs - connectivity#Open / closed walk|terminal]] vertices
+> A simple [[Graphs - connectivity#Circuit|circuit]] is **diametrical** if it's [[#Length of the path|length]] is equal to the [[#Diameter of a graph|diameter]] and is the shortest [[Graphs - connectivity#Path|path]] connecting it's [[Graphs - connectivity#Open / closed walk|terminal]] vertices
+
+## Peripheral vertices
+
+> [[Graphs - basics#Directed graphs|Vertex]] $c \in V$ is called **peripheral**, if it has *highest* [[#Eccentricity of a vertex|eccentricity]] among all graph [[Graphs - basics#Directed graphs|vertices]]
+> $e(p)=max \ e(v)$ 
 
 --- 
 <br>
 
 # Center of a graph
 
-> [[Graphs - basics#Directed graphs|Vertex]] $c \in V$ is called a **center** of a graph, if it has minimal [[#Eccentricity of a vertex|eccentricity]] among all graph [[Graphs - basics#Directed graphs|vertices]] 
+> [[Graphs - basics#Directed graphs|Vertex]] $c \in V$ is called a **center** of a graph, if it has *lowest* [[#Eccentricity of a vertex|eccentricity]] among all graph [[Graphs - basics#Directed graphs|vertices]] 
 > $e(c)=min \ e(v)$ 
 
 ## Graph radius

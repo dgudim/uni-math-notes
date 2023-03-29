@@ -23,7 +23,8 @@
 
 ### Bit (Binary digit)
 
->Direct representation of digital logic values
+> [!definition] 
+> Direct representation of digital logic values
 
 - Can be *0* or *1*
 - Multiple **bits** are used to represent complex data items
@@ -31,6 +32,7 @@
 
 ### Byte
 
+> [!definition] 
 > Set of multiple [[#Bit (Binary digit)|bits]]
 
 - Size depends on underlying hardware (computer)
@@ -41,6 +43,7 @@
 
 #### Byte size
 
+> [!definition] 
 > Numbers of [[#Bit (Binary digit)|bits]] per [[#Byte|byte]] determines range of values that can be stored 
 
 - [[#Byte]] of *k* [[#Bit (Binary digit)|bits]] can store *$2^k$* values
@@ -160,11 +163,13 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 
 # ASCII
 
-- American Standard Code for Information Interchange
-- Vendor independent
-- Adopted by PC manufacturers
-- Specifies <u>128 characters</u>
-- Unprintable characters for modem control
+> [!definition] 
+> 
+> - **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange
+> - Vendor independent
+> - Adopted by PC manufacturers
+> - Specifies <u>128 characters</u>
+> - Unprintable characters for modem control
 
 > [!seealso] 
 > Full ASCII table

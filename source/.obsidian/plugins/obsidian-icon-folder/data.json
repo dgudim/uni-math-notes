@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiCpu-line",
       "RiCpu-fill",
       "LiBinary",
       "LiCpu",
-      "LiHome",
-      "RiTodoLine"
+      "LiHome"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,5 +35,5 @@
   "Home.md": "LiHome",
   "uni/Computer architecture": "LiCpu",
   "uni/Computer architecture/Data representation.md": "LiBinary",
-  "uni/Computer architecture/Processor.md": "RiCpu-fill"
+  "uni/Computer architecture/Processor.md": "RiCpu-line"
 }

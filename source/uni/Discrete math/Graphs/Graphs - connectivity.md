@@ -741,19 +741,23 @@ node [shape = circle,
       color=green, 
       fillcolor = white] 
 
-a [pos="0,0!"] 
+a [pos="0,0!",color=red] 
 b [pos="0.5,0.9!"] 
-c [pos="1.5,0.9!"] 
+c [pos="1.5,0.9!",color=red] 
 d [pos="2,0!"] 
 e [pos="1.5,-0.9!"] 
-f [pos="0.5,-0.9!"] 
+f [pos="0.5,-0.9!",color=red] 
 
 edge [color = grey] 
-d -- c
+
 c -- {a b}
 b -- a
+
+edge [color = green] 
+c -- d
 a -- f
-f -- e
+e -- f
+
 } 
 ```
 
@@ -764,7 +768,8 @@ f -- e
 
 > If graph has an **articulation** it is **separable**
 
-> [[Graphs - basics#Directed graphs|Vertices]] *f*, *a*, *c* are **articulations** in [[#Separability of graphs|our graph]]
+> [[Graphs - basics#Directed graphs|Vertices]] *f*, *a*, *c* are **articulations** in our graph
+
 
 `````col
 ````col-md
@@ -874,6 +879,71 @@ b -- a
 > **Block** - maximal [[#Subgraph ($G' subset G$)|subgraph]] without [[#Articulations|articulations]] 
 
 > [[#Separability of graphs|Our graph]] has *4* **blocks**
+
+```````col 
+ 
+``````col-md 
+flexGrow=0.4
+===
+
+Split on [[#Articulations|articulations]]
+`````` 
+
+[___COMMENT___]: # (Column with split graph)
+
+``````col-md 
+flexGrow=1.2
+===
+
+`````dot 
+graph neato { 
+
+bgcolor="transparent" 
+
+graph [layout = neato] 
+
+node [shape = circle, 
+      style = filled, 
+      width=0.35, 
+      height=0.35, 
+      fixedsize=true,
+      color=green, 
+      fillcolor = white] 
+
+a [pos="0.1,0.2!", color=red] 
+a1 [pos="0.1,-0.2!", label=a, color=red] 
+b [pos="0.5,0.9!"] 
+c [pos="1.3,0.9!", color=red] 
+c1 [pos="1.6,0.65!", label=c, color=red] 
+d [pos="2,0!"] 
+d1 [pos="2,0!", label=d] 
+e [pos="1.5,-0.9!"] 
+f [pos="0.4,-0.75!", color=red] 
+f1 [pos="0.8,-0.9!", label=f, color=red] 
+
+edge [color = grey] 
+
+e -- f1
+f -- a1
+a -- {b, c}
+b -- c
+c1 -- d
+
+} 
+`````
+``````
+
+
+[___COMMENT___]: # (Columnt with 4 blocks)
+
+``````col-md
+flexGrow=1.5
+===
+
+> After splitting we get these 4 **blocks**
+
+[___COMMENT___]: # (Fisrt 2 blocks)
+
 `````col
 
 ````col-md
@@ -930,6 +1000,11 @@ edge [color = grey]
 ```
 
 ````
+`````
+
+[___COMMENT___]: # (Last 2 blocks)
+
+`````col 
 ````col-md
 flexGrow=1
 ===
@@ -988,6 +1063,11 @@ edge [color = grey]
 
 ````
 `````
+
+
+
+
+```````
 
 ## Bridges
 
