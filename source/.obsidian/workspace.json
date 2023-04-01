@@ -23,21 +23,6 @@
             }
           },
           {
-            "id": "2af223474f1a0644",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - shortest path.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "134d163d3b031ab2",
             "type": "leaf",
             "pinned": true,
@@ -53,33 +38,20 @@
             }
           },
           {
-            "id": "3f1c963bcbd6101d",
+            "id": "7db0adf5d48cab96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - connectivity.md",
+                "file": "uni/Computer architecture/Processor.md",
                 "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "73490fcadc1935ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - metrics.md",
-                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -91,7 +63,7 @@
       {
         "id": "bf9febb15c47ae94",
         "type": "tabs",
-        "dimension": 60.38461538461538,
+        "dimension": 67.88461538461539,
         "children": [
           {
             "id": "69b91eb434f6fc4c",
@@ -117,7 +89,7 @@
       {
         "id": "8f18ab9bcbb049eb",
         "type": "tabs",
-        "dimension": 39.61538461538461,
+        "dimension": 32.11538461538462,
         "children": [
           {
             "id": "903469d33f26081c",
@@ -125,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - metrics.md"
+                "file": "uni/Computer architecture/Processor.md"
               }
             }
           }
@@ -150,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - metrics.md",
+                "file": "uni/Computer architecture/Processor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "uni/Discrete math/Graphs/Graphs - metrics.md",
+                "file": "uni/Computer architecture/Processor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +214,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,57 +226,57 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "3d-graph:3D Graph": false,
       "webpage-html-export:Export Vault to HTML": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "73490fcadc1935ba",
+  "active": "7db0adf5d48cab96",
   "lastOpenFiles": [
-    "export/uni/discrete-math/graphs/recode-q04jm2.tmp",
-    "export/uni/discrete-math/graphs/recode-Ufq7BX.tmp",
+    "export/uni/computer-architecture/processor.html",
+    "export/uni/computer-architecture/attachements/priv_rings.svg",
+    "export/uni/computer-architecture/attachements",
+    "export/uni/computer-architecture/images/59b633a4abc750132638cce218fade87.svg",
+    "export/uni/computer-architecture/images/135db6616ff1fddc7512992e7397b42b.svg",
+    "export/uni/computer-architecture/images",
+    "export/uni/computer-architecture/webpage.js",
+    "export/uni/computer-architecture/snippets.css",
+    "export/uni/computer-architecture/theme.css",
+    "export/uni/computer-architecture/plugin-styles.css",
+    "export/uni/computer-architecture/obsidian-styles.css",
+    "export/uni/computer-architecture/processor2.html",
     "Home.md",
-    "uni/Discrete math/Graphs/Graphs - connectivity.md",
     "uni/Computer architecture/Processor.md",
     "uni/Computer architecture/Data representation.md",
-    "uni/Discrete math/Graphs/Graphs - shortest path.md",
-    "uni/Discrete math/Graphs/Graphs - metrics2.md",
-    "uni/Discrete math/Graphs/Graphs - metrics.md",
-    "uni/Discrete math/Graphs/Graphs - operations.md",
+    "uni/Misc/Git presentation.md",
+    "export/uni/computer-architecture/data-representation.html",
+    "uni/Untitled.md",
     "uni/Discrete math/Graphs/Graphs - basics.md",
-    "uni/Discrete math/Graphs/Graphs - trees.md",
-    "export/README.md",
-    "export/uni/discrete-math/graphs/recode-otQJB5.tmp",
-    "export/uni/discrete-math/graphs/recode-xIIxOy.tmp",
-    "export/uni/discrete-math/graphs/recode-of5ebJ.tmp",
-    "export/uni/discrete-math/graphs/recode-bnkP2s.tmp",
-    "export/uni/discrete-math/graphs/recode-7bHQFS.tmp",
-    "export/uni/discrete-math/graphs/recode-Nnw6pa.tmp",
-    "export/uni/discrete-math/graphs/recode-FlVJap.tmp",
-    "export/uni/discrete-math/graphs/recode-5wODtl.tmp",
-    "export/uni/discrete-math/graphs/recode-tFKtvl.tmp",
+    "uni/Discrete math/Graphs/Graphs - shortest path.md",
     "uni/Discrete math/Graphs/Graphs - planarity.md",
     "uni/Discrete math/Graphs/Graphs - morphism.md",
+    "uni/Discrete math/Graphs/Graphs - metrics.md",
+    "uni/Discrete math/Graphs/Graphs - metrics2.md",
+    "uni/Discrete math/Graphs/Graphs - connectivity.md",
+    "uni/Discrete math/Graphs/Graphs - trees.md",
+    "uni/Discrete math/Graphs/Graphs - operations.md",
+    "uni/Computer architecture/attachements/Priv_rings.svg",
+    "Reference.md",
+    "uni/English/Midterm1 (w6)/Midterm1_plagiarism_spying (w6).md",
+    "uni/English/Midterm1 (w6)/text2.md",
+    "uni/English/Research proposal (w7)/General info (w7).md",
+    "uni/English/Midterm1 (w6)/text1.png",
+    "export/README.md",
     "uni/Computer architecture/attachements/positional_interpretation.png",
     "uni/Computer architecture/attachements/image-asset.png",
     "uni/Computer architecture/attachements/endianness_had.webp",
-    "uni/English/Midterm1_plagiarism_spying.md",
     "LaTeX docs/OLxcolorList.png",
     "LaTeX docs/OLxcolorList2.png",
-    "Reference.md",
     "Scheduler.md",
-    "uni/English/ethics/Transcript.md",
+    "uni/English/ethics (w3)/Transcript.md",
     "conflict-files-obsidian-git.md",
     "Films_etc/Watched.md",
     "Films_etc/ToWatch.md",
-    "uni/English/networks-wifi/Networks 2 (w5).md",
-    "uni/English/networks-wifi/Networks (w4).md",
-    "uni/English/networks-wifi/Netwoks (w4).md",
-    "Excalidraw/Drawing 2023-03-14 18.00.04.excalidraw.md",
-    "Excalidraw/Scripts/Downloaded/Convert freedraw to line.svg",
-    "Excalidraw/Scripts/Downloaded/Convert freedraw to line.md",
-    "uni/Discrete math/Graphs/areas.svg",
-    "uni/Discrete math/Graphs/Untitled Diagram.svg",
-    "home-banner.jpg",
-    "uni/English/ethics/transcript.png",
+    "uni/English/networks-wifi (w4, w5)/Networks 2 (w5).md",
     "Untitled.canvas"
   ]
 }

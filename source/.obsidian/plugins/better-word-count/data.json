@@ -18,6 +18,7 @@
     }
   ],
   "altBar": [],
-  "countComments": false,
-  "collectStats": false
+  "countComments": true,
+  "collectStats": false,
+  "pageWords": 300
 }

@@ -20,11 +20,12 @@
   "obsidian-admonition",
   "3d-graph",
   "highlightr-plugin",
-  "obsidian-graphviz",
   "obsidian-completr",
   "obsidian-tikzjax",
   "obsidian-latex-suite",
   "webpage-html-export",
   "obsidian-asciidoc-blocks",
-  "obsidian-kroki"
+  "obsidian-kroki",
+  "obsidian-universal-renderer",
+  "obsidian-advanced-slides"
 ]

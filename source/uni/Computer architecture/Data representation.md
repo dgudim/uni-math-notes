@@ -1,10 +1,10 @@
 # Digital logic
 
 - Built on <u>two-valued</u> logic system
-	- *+5v* and *0v*
-	- *High* and *low*
-	- *true* and *false*
-	- *asserted* and *not asserted*
+	- **+5v** and *0v*
+	- **High** and *low***
+	- **true** and *false*
+	- **asserted** and *not asserted*
 
 > [!note] 
 > Underneath it's all electrons and wires
@@ -36,9 +36,9 @@
 > Set of multiple [[#Bit (Binary digit)|bits]]
 
 - Size depends on underlying hardware (computer)
-	- CDC - 6 [[#Bit (Binary digit)|bits]]
-	- BB&N - 10 [[#Bit (Binary digit)|bits]]
-	- IBM - 8 [[#Bit (Binary digit)|bits]] (standard nowadays)
+	- CDC - **6 [[#Bit (Binary digit)|bits]]**
+	- BB&N - **10 [[#Bit (Binary digit)|bits]]**
+	- IBM - **8 [[#Bit (Binary digit)|bits]]** (standard nowadays)
 - On most computers the **byte** is the <u>smallest addressable</u> unit of storage
 
 #### Byte size
@@ -47,9 +47,9 @@
 > Numbers of [[#Bit (Binary digit)|bits]] per [[#Byte|byte]] determines range of values that can be stored 
 
 - [[#Byte]] of *k* [[#Bit (Binary digit)|bits]] can store *$2^k$* values
-	- 6 [[#Bit (Binary digit)|bits]] - *64* values
-	- 8 [[#Bit (Binary digit)|bits]] - *256* values
-	- 10 [[#Bit (Binary digit)|bits]] - *1024* values
+	- **6 [[#Bit (Binary digit)|bits]]** - **64** values
+	- **8 [[#Bit (Binary digit)|bits]]** - **256** values
+	- **10 [[#Bit (Binary digit)|bits]]** - **1024** values
 
 ### Binary representation
 
@@ -213,8 +213,8 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 
 - Extends [[#ASCII]]
 	- Assigns meaning to values from 128 to 255
-	- Characters can be 16/32 [[#Bit (Binary digit)|bits]] long
-- Can represent larger set of characters
+	- Characters can be **16/32 [[#Bit (Binary digit)|bits]]** long
+- Can represent *larger set* of characters
 - Can accommodate languages such as Chinese
 
 --- 
@@ -233,7 +233,7 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 - Each successive [[#Bit (Binary digit)|bit]] represents <u>next power of 2</u>
 - No negative numbers (A set of *k* [[#Bit (Binary digit)|bits]] can represent integers from *0* to *$2^k-1$*)
 - Precision is fixed (size of integer is constant)
-- Arithmetic operations can produce overflow/underflow (result can't be represented in *k* bits)
+- Arithmetic operations can produce [[#Overflow|overflow]]/underflow (result can't be represented in *k* bits)
 - [[#Overflow]] is handled with wraparound and carry bit
 
 ## Overflow
@@ -241,7 +241,7 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 - Values wrap around address space
 - Hardware records **overflow** in a separate <u>carry indicator</u>
 	- Software must check it after operations
-	- Can be used to *raise an exception*
+	- Can be used to [[Processor#Condition codes|raise an exception]]
 
 > Red is overflow
 > 
@@ -287,7 +287,7 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 
 - Positive numbers use [[#Binary weighted positional interpretation|positional representation]]
 - Negative number are formed by inverting all [[#Bit (Binary digit)|bits]] of positive value
-- ? Quirk: two representations for *0*: 0000 and 1111
+- ? Quirk: two representations for *0*: *0000* and *1111*
 
 > [!note] 
 > Some checksum algorthms use **one's complement**
@@ -343,8 +343,8 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 ## Order of bits and bytes
 
 - @ Need to choose order for
-	- *Storage* in physical memory system
-	- *Transmission* over a network
+	- **Storage** in physical memory system
+	- **Transmission** over a network
 
 1. [[#Bit (Binary digit)|Bit]] order 
 	- Handled by hardware
@@ -381,10 +381,10 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 > - *-123456* is stored as
 > 	- 0x01 0x02 0x03 0x04 0x05 0x06 0x0D
 
-- <u>Disadvantages</u> 
+- ! Disadvantages
 	- Takes up more space
 	- Hardware is slower than integer or floating point
-- <u>Advanages</u>
+- $ Advantages
 	- Gives results humans expect 
 	- Avoids repeating binary value for *.01*
 
@@ -462,3 +462,11 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 
 > [!note] 
 > <u>Infinity</u> values handles cases such as the <u>result of division by 0</u>
+
+--- 
+<br>
+
+# Go to other topics
+``` dataview
+list from "uni/Computer architecture"
+```

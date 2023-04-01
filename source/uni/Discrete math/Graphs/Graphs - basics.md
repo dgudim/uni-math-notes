@@ -237,15 +237,15 @@ node [shape = circle,
       style = filled,
       width=0.3,
       height=0.3,
-      color = grey]
+      color = grey,
+      fillcolor = white]
+e
 
 node [fillcolor = lightgreen]
 a b
 
 node [fillcolor = red]
 c d
-
-node [fillcolor = white]
 
 edge [color = lightgreen]
 a -- b

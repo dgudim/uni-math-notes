@@ -125,10 +125,10 @@
       "obsidianBlockName": "ditaa",
       "description": "",
       "url": "http://ditaa.sourceforge.net/",
-      "enabled": true,
+      "enabled": false,
       "toggle": {
         "disabled": false,
-        "on": true,
+        "on": false,
         "toggleEl": {}
       }
     },
@@ -187,7 +187,7 @@
     {
       "prettyName": "Mermaid",
       "krokiBlockName": "mermaid",
-      "obsidianBlockName": "mermaid",
+      "obsidianBlockName": "mermaid_k",
       "description": "",
       "url": "https://github.com/knsv/mermaid",
       "enabled": false,

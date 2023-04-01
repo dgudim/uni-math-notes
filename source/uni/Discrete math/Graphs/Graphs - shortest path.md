@@ -52,8 +52,8 @@
 	- Set the initial node as current
 
 > [!note]  
-> - The tentative distance of a node is the [[Graphs - connectivity#Length of the path|length]] of the shortest path discovered so far between the node and the starting node
-> - Since initially no path is known to any other [[Graphs - basics#Directed graphs|vertex]] other than the source itself, all other tentative distances are set to infinity
+> - The *tentative distance *of a node is the [[Graphs - connectivity#Length of the path|length]] of the shortest path discovered so far between the node and the starting node
+> - Since initially no path is known to any other [[Graphs - basics#Directed graphs|vertex]] other than the source itself, all other *tentative distances* are set to *infinity*
 
 3. For the current node, consider all of its <u>unvisited</u> [[Graphs - basics#Properties|neighbors]] and *calculate their tentative distances through the current node*. Compare the newly calculated tentative distance to the current assigned value and *assign the smallest one* 
 4. Mark the current node as <u>visited</u> and remove it from the *unvisited set*. (A visited node will never be checked again)
@@ -81,19 +81,20 @@ subgraph cluster_space {
 	      style = filled, 
 	      width=0.45, 
 	      height=0.45, 
-	      color=green, 
-	      fillcolor = white, 
-	      fontcolor=grey,
-	      fixedsize=true] 
+	      color=darkyellow, 
+	      fillcolor=white, 
+	      fontcolor=brightwhite,
+	      fixedsize=true,
+	      penwidth=3]  
 	
-	a [label="\n\n\nA(0,0)",color=blue]
+	a [label="\n\n\nA(0,0)",color=orange]
 	b [label="\n\n\nB(∞,0)"]
 	c [label="\n\n\nC(∞,0)"]
 	d [label="D(∞,0)\n\n\n\n"]
 	e [label="E(∞,0)\n\n\n\n"]
 	f [label="\n\n\nF(∞,0)",color=red]
 	
-	edge [color = grey, fontcolor=grey] 
+	edge [color=lightgray, fontcolor=lightgray]  
 	
 	a -- b [label="5",weight=5]
 	a -- c [label="6",weight=6]
@@ -129,22 +130,23 @@ subgraph cluster_space {
 	      style = filled, 
 	      width=0.45, 
 	      height=0.45, 
-	      color=green, 
-	      fillcolor = white, 
-	      fontcolor=grey,
-	      fixedsize=true] 
+	      color=darkyellow, 
+	      fillcolor=white, 
+	      fontcolor=brightwhite,
+	      fixedsize=true,
+	      penwidth=3] 
 	
-	a [label="\n\n\nA(0,0)",color=blue,fontcolor=teal]
+	a [label="\n\n\nA(0,0)",color=darkaqua,fontcolor=darkblue]
 	b [label="\n\n\nB(5,A)",fontcolor=red]
 	c [label="\n\n\nC(6,A)",fontcolor=red]
 	d [label="D(∞,0)\n\n\n\n"]
 	e [label="E(∞,0)\n\n\n\n"]
 	f [label="\n\n\nF(∞,0)",color=red]
 	
-	edge [color = grey, fontcolor=grey] 
+	edge [color=lightgray, fontcolor=lightgray] 
 	
-	a -- b [label="5",weight=5,color=darkred]
-	a -- c [label="6",weight=6,color=darkred]
+	a -- b [label="5",weight=5,color=darkred,penwidth=2]
+	a -- c [label="6",weight=6,color=darkred,penwidth=2]
 	b -- e [label="2",weight=2]
 	b -- f [label="10",weight=10]
 	b -- c [label="3",weight=3]
@@ -160,6 +162,7 @@ subgraph cluster_space {
 3. Consider neighbors of *B*. 
 	- Assign **(12,B)** to *D*
 	- Assign **(7,B)** to *E*
+	- Assign **(15,B)** to *F*
 	- *C* already has a smaller tentative weight, don't assign **(8,B)**. 
 	- *C* has the smallest tentative distance, we will work with *C* next
 ```dot 
@@ -178,26 +181,27 @@ subgraph cluster_space {
 	      style = filled, 
 	      width=0.45, 
 	      height=0.45, 
-	      color=green, 
-	      fillcolor = white, 
-	      fontcolor=grey,
-	      fixedsize=true] 
+	      color=darkyellow, 
+	      fillcolor=white, 
+	      fontcolor=brightwhite,
+	      fixedsize=true,
+	      penwidth=3]
 	
-	a [label="\n\n\nA(0,0)",color=blue,fontcolor=teal]
-	b [label="\n\n\nB(5,A)",fontcolor=teal]
-	c [label="\n\n\n   C(6,A)",xlabel=<<font color="red">(8,B)</font>>]
+	a [label="\n\n\nA(0,0)",color=orange,fontcolor=darkblue]
+	b [label="\n\n\nB(5,A)",color=darkaqua,fontcolor=darkblue]
+	c [label="\n\n\n    C(6,A)",xlabel=<<font color=red>(8,B)</font>>]
 	d [label="D(12,B)\n\n\n\n",fontcolor=red]
 	e [label="E(7,B)\n\n\n\n",fontcolor=red]
 	f [label="\n\n\nF(15,B)",color=red,fontcolor=red]
 	
-	edge [color = grey, fontcolor=grey] 
+	edge [color=lightgray, fontcolor=lightgray] 
 	
-	a -- b [label="5",weight=5,color=lime]
+	a -- b [label="5",weight=5,color=green,penwidth=2]
 	a -- c [label="6",weight=6]
-	b -- e [label="2",weight=2,color=darkred]
-	b -- f [label="10",weight=10,color=darkred]
-	b -- c [label="3",weight=3,color=darkred]
-	b -- d [label="7",weight=7,color=darkred]
+	b -- e [label="2",weight=2,color=darkred,penwidth=2]
+	b -- f [label="10",weight=10,color=darkred,penwidth=2]
+	b -- c [label="3",weight=3,color=darkred,penwidth=2]
+	b -- d [label="7",weight=7,color=darkred,penwidth=2]
 	c -- e [label="7",weight=7]
 	d -- f [label="2",weight=2]
 	f -- e [label="4",weight=4]
@@ -226,27 +230,28 @@ subgraph cluster_space {
 	      style = filled, 
 	      width=0.45, 
 	      height=0.45, 
-	      color=green, 
-	      fillcolor = white, 
-	      fontcolor=grey,
-	      fixedsize=true] 
+	      color=darkyellow, 
+	      fillcolor=white, 
+	      fontcolor=brightwhite,
+	      fixedsize=true,
+	      penwidth=3] 
 	
-	a [label="\n\n\nA(0,0)",color=blue,fontcolor=teal]
-	b [label="\n\n\nB(5,A)",fontcolor=teal]
-	c [label="\n\n\nC(6,A)",fontcolor=teal]
+	a [label="\n\n\nA(0,0)",color=orange,fontcolor=darkblue]
+	b [label="\n\n\nB(5,A)",color=darkpurple,fontcolor=darkblue]
+	c [label="\n\n\nC(6,A)",color=darkaqua,fontcolor=darkblue]
 	d [label="D(12,B)\n\n\n\n"]
-	e [label="E(7,B)\n\n\n\n",xlabel=<<font color="red">(13,C)</font>>]
+	e [label="E(7,B)\n\n\n\n",xlabel=<<font color=red>(13,C)</font>>]
 	f [label="\n\n\nF(15,B)",color=red]
 	
-	edge [color = grey, fontcolor=grey] 
+	edge [color=lightgray, fontcolor=lightgray]  
 	
 	a -- b [label="5",weight=5]
-	a -- c [label="6",weight=6,color=lime]
+	a -- c [label="6",weight=6,color=green,penwidth=2]
 	b -- e [label="2",weight=2]
 	b -- f [label="10",weight=10]
 	b -- c [label="3",weight=3]
 	b -- d [label="7",weight=7]
-	c -- e [label="7",weight=7,color=darkred]
+	c -- e [label="7",weight=7,color=darkred,penwidth=2]
 	d -- f [label="2",weight=2]
 	f -- e [label="4",weight=4]
 	
@@ -273,36 +278,37 @@ subgraph cluster_space {
 	      style = filled, 
 	      width=0.45, 
 	      height=0.45, 
-	      color=green, 
-	      fillcolor = white, 
-	      fontcolor=grey,
-	      fixedsize=true] 
+	      color=darkyellow, 
+	      fillcolor=white, 
+	      fontcolor=brightwhite,
+	      fixedsize=true,
+	      penwidth=3] 
 	
-	a [label="\n\n\nA(0,0)",color=blue,fontcolor=teal]
-	b [label="\n\n\nB(5,A)",fontcolor=teal]
-	c [label="\n\n\nC(6,A)",fontcolor=teal]
+	a [label="\n\n\nA(0,0)",color=orange,fontcolor=darkblue]
+	b [label="\n\n\nB(5,A)",color=darkpurple,fontcolor=darkblue]
+	c [label="\n\n\nC(6,A)",color=darkpurple,fontcolor=darkblue]
 	d [label="D(12,B)\n\n\n\n"]
-	e [label="E(7,B)\n\n\n\n",fontcolor=teal]
-	f [label="\n\n\n     F(15,B)",color=red,xlabel=<<font color="red">(11,E)</font>>]
+	e [label="E(7,B)\n\n\n\n",color=darkaqua,fontcolor=darkblue]
+	f [label="\n\n\n      F(15,B)",color=red,xlabel=<<font color=red>(11,E)</font>>]
 	
-	edge [color = grey, fontcolor=grey] 
+	edge [color=lightgray, fontcolor=lightgray] 
 	
-	a -- b [label="5",weight=5,color=lime]
+	a -- b [label="5",weight=5,color=green,penwidth=2]
 	a -- c [label="6",weight=6]
-	b -- e [label="2",weight=2,color=lime]
+	b -- e [label="2",weight=2,color=green,penwidth=2]
 	b -- f [label="10",weight=10]
 	b -- c [label="3",weight=3]
 	b -- d [label="7",weight=7]
 	c -- e [label="7",weight=7]
 	d -- f [label="2",weight=2]
-	f -- e [label="4",weight=4,color=darkred]
+	f -- e [label="4",weight=4,color=darkred,penwidth=2]
 	
 	}
 } 
 ```
 
 6. We have reached our destination *F*, stop
-	- First element shows *distance*, second - *directions*
+	- First element shows **distance**, second - **directions**
 	- So, final directions are: $A \to B \to E \to F$
 ```dot 
 graph neato { 
@@ -311,38 +317,39 @@ bgcolor="transparent"
 
 rankdir="LR"
 
-graph [layout = dot, ranksep=1,nodesep=.5] 
+graph [layout = dot, ranksep=1,nodesep=.5]
 
 subgraph cluster_space {
-	graph [peripheries=0]
+	graph [peripheries=0] 
 	
 	node [shape = circle, 
 	      style = filled, 
 	      width=0.45, 
 	      height=0.45, 
-	      color=green, 
-	      fillcolor = white, 
-	      fontcolor=grey,
-	      fixedsize=true] 
+	      color=darkyellow, 
+	      fillcolor=white, 
+	      fontcolor=brightwhite,
+	      fixedsize=true,
+	      penwidth=3] 
 	
-	a [label="\n\n\nA(0,0)",color=blue,fontcolor=teal]
-	b [label="\n\n\nB(5,A)",fontcolor=teal]
-	c [label="\n\n\nC(6,A)",fontcolor=teal]
+	a [label="\n\n\nA(0,0)",color=orange,fontcolor=darkblue]
+	b [label="\n\n\nB(5,A)",color=darkpurple,fontcolor=darkblue]
+	c [label="\n\n\nC(6,A)",color=darkpurple,fontcolor=darkblue]
 	d [label="D(12,B)\n\n\n\n"]
-	e [label="E(7,B)\n\n\n\n",fontcolor=teal]
-	f [label="\n\n\nF(11,E)",fontcolor=teal]
+	e [label="E(7,B)\n\n\n\n",color=darkpurple,fontcolor=darkblue]
+	f [label="\n\n\nF(11,E)",color=red,fontcolor=red]
 	
-	edge [color = grey, fontcolor=grey] 
+	edge [color=lightgray, fontcolor=lightgray] 
 	
-	a -- b [label="5",weight=5,color=lime]
+	a -- b [label="5",weight=5,color=green,penwidth=3]
 	a -- c [label="6",weight=6]
-	b -- e [label="2",weight=2,color=lime]
+	b -- e [label="2",weight=2,color=green,penwidth=3]
 	b -- f [label="10",weight=10]
 	b -- c [label="3",weight=3]
 	b -- d [label="7",weight=7]
 	c -- e [label="7",weight=7]
 	d -- f [label="2",weight=2]
-	f -- e [label="4",weight=4,color=lime]
+	f -- e [label="4",weight=4,color=green,penwidth=3]
 	
 	}
 } 
@@ -350,3 +357,43 @@ subgraph cluster_space {
 
 ### Floyd-Warshall algorithm
 
+1. Make matrices
+
+```latex
+
+\documentclass[preview,class=memoir]{standalone}   
+
+\usepackage{amsmath}
+\usepackage[table]{xcolor}
+
+\newcommand\x{\times}
+\newcommand\y{\cellcolor{green!10}}
+
+\begin{document}
+\color{black}
+
+\begin{equation}\label{eq:appendrow}
+  \left(\begin{array}{cccc}
+    \rowcolor{red!20}
+    \x  & \x  & \x & \x \\
+    0   & \x  & \x & \x \\
+   \rowcolor{blue!20}
+    0   & 0   & \x & \x \\
+    0   & 0   & 0  & \x \\
+    \y a  &  b  & \y c &  d\\
+  \end{array}\right)
+\end{equation}
+
+\begin{equation}
+  \left(\begin{array}{>{\columncolor{olive!20}}cc>{\columncolor{yellow!20}}cc}
+    \x  & \x  & \x & \x \\
+    0   & \x  & \x & \x \\
+    0   & 0   & \x & \x \\
+    0   & 0   & 0  & \x \\
+    a  & b  & c & d \\
+  \end{array}\right)
+\end{equation}
+
+\end{document}
+
+```
