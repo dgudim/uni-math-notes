@@ -22,7 +22,7 @@ echo "<!DOCTYPE html>
 
 for f in $(find $FOLDER -name "*.html")
 do
-TITLE=$(cat $f | grep "<title>" | sed 's/<title>//g; s/<\/title>//g;' | xargs)
+TITLE=$(cat $f | grep -m 1 "<title>" | sed 's/<title>//g; s/<\/title>//g;' | xargs)
 echo "              <li><a href=\"$f\">$TITLE</a></li>" >> $FILE
 done
 
