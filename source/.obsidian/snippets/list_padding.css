@@ -1,2 +1,3 @@
-/* 10 pixel padding above each list item */
-li + li { padding-top: 0.4em !important; }
+li + li {
+    padding-top: 0.4em !important;
+}

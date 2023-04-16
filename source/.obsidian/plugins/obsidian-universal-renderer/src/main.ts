@@ -1,6 +1,6 @@
 import { Plugin } from 'obsidian';
 import { DEFAULT_SETTINGS, GraphvizSettings, GraphvizSettingsTab } from './setting';
-import { Processors } from './processors';
+import { Processors, renderTypes } from './processors';
 
 export default class GraphvizPlugin extends Plugin {
   settings: GraphvizSettings;
@@ -12,8 +12,8 @@ export default class GraphvizPlugin extends Plugin {
     const processors = new Processors(this);
 
     this.app.workspace.onLayoutReady(() => {
-      for (const [type, func] of processors.renderTypeMapping) {
-        this.registerMarkdownCodeBlockProcessor(type, func.bind(processors));
+      for (const type of renderTypes) {
+        this.registerMarkdownCodeBlockProcessor(type, processors.getProcessorForType(type).bind(processors));
       }
     });
   }

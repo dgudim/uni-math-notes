@@ -1,0 +1,130 @@
+.reveal .slide-background-content {
+   background-color: var(--background-primary);
+}
+
+.reveal p,.reveal ul {
+    color: var(--text-normal);
+}
+
+.reveal h1 {
+    color: var(--h1-color);
+}
+
+.reveal h2 {
+    color: var(--h2-color);
+}
+
+.reveal h3 {
+    color: var(--h3-color);
+}
+
+.reveal h4 {
+    color: var(--h4-color);
+}
+
+.reveal h5 {
+    color: var(--h5-color);
+}
+
+.reveal h6 {
+    color: var(--h6-color);
+}
+
+
+
+
+
+
+.slides {
+  /* height: 100% !important;*/
+  width: 60% !important;
+}
+
+
+
+/* font size */
+.reveal {
+  font-size: 1.5em; /* for mobile use 1.5em */
+}
+
+/*@media screen and (orientation:landscape) {
+  .slides {
+    zoom: 0.7 !important;
+  }
+}*/
+
+
+/* ---------------------------------------------------- */
+
+/*/adds scrollbar*/
+/*.slides {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  pointer-events: auto !important;
+}
+
+
+ hide scroll bar
+.slide ::-webkit-scrollbar {
+  display: none !important;
+}*/
+
+
+/* ---------------------------------------------------- */
+
+/* code styles */
+.reveal code {
+  max-height: fit-content !important; /* disable this if you want scrollable code blocks */
+}
+
+
+
+/* code blocks */
+.reveal pre {
+  font-size: 0.8em;
+  min-height: 1em;
+  padding: 0.5em;
+  /* margin-left: -2.5%; */
+  /* width: 105%; */
+  /* max-width: 70%; */
+}
+
+
+
+/* move copy button to top right corner */
+.slide .copy-code-button {
+  display: none !important;
+}
+
+
+
+/* ---------------------------------------------------- */
+
+/* blockquotes */
+.reveal blockquote {
+  border-left: 5px solid var(--background-modifier-border);
+  padding: 0 0 0 15px;
+  font-size: 0.9em;
+}
+
+.reveal blockquote>p {
+  margin: 0.5em 0;
+}
+
+/* ---------------------------------------------------- */
+
+/* adds border to table */
+
+.reveal table>thead>tr>th {
+  font-weight: 500;
+  border: 1px solid hsl(0, 0%, 18%);
+}
+
+.reveal table>tbody>tr>td {
+  border: 1px solid hsl(0, 0%, 18%);
+}
+
+.reveal table, th, td {
+  border: 1px solid hsl(0, 0%, 18%);
+}
+

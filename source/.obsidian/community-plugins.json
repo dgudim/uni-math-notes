@@ -4,7 +4,6 @@
   "text-snippets-obsidian",
   "obsidian-columns",
   "obsidian-git",
-  "obsidian-charts",
   "obsidian-list-callouts",
   "obsidian-kanban",
   "obsidian-icons-plugin",
@@ -18,14 +17,12 @@
   "table-editor-obsidian",
   "advanced-paste",
   "obsidian-admonition",
-  "3d-graph",
   "highlightr-plugin",
   "obsidian-completr",
-  "obsidian-tikzjax",
   "obsidian-latex-suite",
-  "webpage-html-export",
-  "obsidian-asciidoc-blocks",
   "obsidian-kroki",
+  "mermaid-tools",
+  "webpage-html-export",
   "obsidian-universal-renderer",
-  "obsidian-advanced-slides"
+  "obsidian-charts"
 ]

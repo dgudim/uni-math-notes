@@ -11,6 +11,9 @@ flexGrow=1
 ## $G$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -29,7 +32,7 @@ b [pos="0,1!"]
 c [pos="0,0!"] 
 d [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- {b d} 
 c -- {b a d} 
@@ -44,6 +47,9 @@ flexGrow=1
 ## $T \subset G$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -62,7 +68,7 @@ b [pos="0,1!"]
 c [pos="0,0!"] 
 d [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- {b d} 
 c -- {b} 
@@ -85,6 +91,9 @@ flexGrow=1
 ## Isolated
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -103,7 +112,7 @@ b [pos="0,1!"]
 c [pos="0,0!"] 
 d [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- {b} 
 c -- {b a} 
@@ -119,6 +128,9 @@ flexGrow=1
 ## Rising
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -137,7 +149,7 @@ b [pos="0,1!"]
 c [pos="0,0!"] 
 d [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 a -- {b d} 
 c -- {b a} 
 } 
@@ -153,6 +165,9 @@ c -- {b a}
 # Homogeneous graph
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -173,7 +188,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"]
 f [pos="0.5,-0.9!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
 a -- {b c}
 b -- {c d}
 c -- {d e}
@@ -201,6 +216,9 @@ flexGrow=1
 ## Connected
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -221,7 +239,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- {b d e} 
 b -- {c d} 
@@ -236,6 +254,9 @@ flexGrow=1
 ## Not connected
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -256,7 +277,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- {b d e} 
 b -- {c d} 
@@ -301,6 +322,9 @@ b -- {c d}
 > **Walk** is any finite sequence of graph [[Graphs - basics#Directed graphs|vertices]] and [[Graphs - basics#Undirected graph|edges]] 
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -321,7 +345,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- {b d e} 
 b -- {c d} 
@@ -420,6 +444,9 @@ Can be written in 2 ways:
 > [[#Open / closed walk|Closed]] [[#Circuit|circuit]] is called a **cycle** 
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -440,7 +467,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- b
 c -- d
@@ -467,6 +494,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -488,13 +518,13 @@ e [pos="1.5,-0.9!"]
 f [pos="0.5,-0.9!"] 
 o [pos="1,0!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- b
 f -- a
 d -- o
 
-edge [color = yellow] 
+edge [color = yellow, penwidth=2] 
 b -- c
 c -- d
 b -- o
@@ -511,6 +541,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -532,7 +565,7 @@ e [pos="1.5,-0.9!"]
 f [pos="0.5,-0.9!"] 
 o [pos="1,0!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- b
 d -- e
@@ -541,7 +574,7 @@ f -- a
 
 f -- o
 
-edge [color = red] 
+edge [color = red, penwidth=2] 
 b -- c
 c -- d
 b -- o
@@ -556,6 +589,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -577,7 +613,7 @@ e [pos="1.5,-0.9!"]
 f [pos="0.5,-0.9!"] 
 o [pos="1,0!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 
 d -- e
@@ -588,7 +624,7 @@ c -- d
 
 d -- o
 
-edge [color = cyan] 
+edge [color = cyan, penwidth=2] 
 b -- o
 f -- o
 a -- b
@@ -728,6 +764,9 @@ flexGrow=1
 # Separability of graphs
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -748,12 +787,12 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!",color=red] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 c -- {a b}
 b -- a
 
-edge [color = green] 
+edge [color = lightgreen, penwidth=2] 
 c -- d
 a -- f
 e -- f
@@ -770,7 +809,6 @@ e -- f
 
 > [[Graphs - basics#Directed graphs|Vertices]] *f*, *a*, *c* are **articulations** in our graph
 
-
 `````col
 ````col-md
 flexGrow=1
@@ -778,6 +816,9 @@ flexGrow=1
 ### $G-c$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -797,7 +838,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 b -- a
 a -- f
 f -- e
@@ -811,6 +852,9 @@ flexGrow=0.8
 ### $G-a$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -830,7 +874,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 d -- c
 c -- b
 f -- e
@@ -844,6 +888,9 @@ flexGrow=1
 ### $G-f$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -863,7 +910,7 @@ c [pos="1.5,0.9!"]
 d [pos="2,0!"] 
 e [pos="1.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 d -- c
 c -- {a b}
 b -- a
@@ -896,6 +943,9 @@ flexGrow=1.2
 ===
 
 `````dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -921,7 +971,7 @@ e [pos="1.5,-0.9!"]
 f [pos="0.4,-0.75!", color=red] 
 f1 [pos="0.8,-0.9!", label=f, color=red] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 e -- f1
 f -- a1
@@ -951,6 +1001,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -967,7 +1020,7 @@ node [shape = circle,
 c [pos="0,0!"] 
 d [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  c -- d
 } 
 ```
@@ -978,6 +1031,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -994,7 +1050,7 @@ node [shape = circle,
 f [pos="0,0!"] 
 e [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  f -- e
 } 
 ```
@@ -1010,6 +1066,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -1026,7 +1085,7 @@ node [shape = circle,
 a [pos="0,0!"] 
 f [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  a -- f
 }
 ```
@@ -1037,6 +1096,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -1054,7 +1116,7 @@ a [pos="0,0!"]
 b [pos="0.5,1!"] 
 c [pos="1,0!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
  a -- b
  b -- c
  c -- a
@@ -1083,6 +1145,9 @@ flexGrow=1
 ### $G-\{c,d\}$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -1103,7 +1168,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 c -- {a b}
 b -- a
 a -- f
@@ -1117,7 +1182,10 @@ flexGrow=1
 ===
 ### $G-\{e,f\}$
 
-```dot 
+```dot
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -1138,7 +1206,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 d -- c
 c -- {a b}
 b -- a
@@ -1153,6 +1221,9 @@ flexGrow=1
 ### $G-\{a,f\}$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -1173,7 +1244,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 d -- c
 c -- {a b}
 b -- a
@@ -1187,6 +1258,9 @@ f -- e
 ## Separating sets
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -1200,19 +1274,19 @@ node [shape = circle,
       color=green, 
       fillcolor = white] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 a -- {c b}
 c -- b
 d -- {c b e}
 f -- {i}
 g -- {h}
 
-edge [color = red]
+edge [color = red, penwidth=2]
 d -- f
 e -- f
 g -- f
 
-edge [color = yellow]
+edge [color = yellow, penwidth=2]
 e -- g
 
 } 

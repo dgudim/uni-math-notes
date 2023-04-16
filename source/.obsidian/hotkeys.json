@@ -175,5 +175,11 @@
       ],
       "key": "H"
     }
+  ],
+  "slides:start": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
   ]
 }

@@ -9,7 +9,7 @@
   "highDPIDiagrams": true,
   "pandoc": null,
   "pdflatex": null,
-  "outputFolder": "/home/kloud/Documents/obsidian_exports",
+  "outputFolder": "",
   "extraArguments": "",
   "exportFrom": "html"
 }

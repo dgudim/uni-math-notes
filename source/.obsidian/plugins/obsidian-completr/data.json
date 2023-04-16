@@ -3,7 +3,7 @@
   "maxLookBackDistance": 50,
   "autoFocus": false,
   "autoTrigger": true,
-  "minWordLength": 2,
+  "minWordLength": 4,
   "minWordTriggerLength": 3,
   "wordInsertionMode": "Ignore-Case & Append",
   "ignoreDiacriticsWhenFiltering": false,

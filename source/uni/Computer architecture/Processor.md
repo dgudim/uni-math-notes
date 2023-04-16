@@ -27,7 +27,7 @@ graph[layout=neato]
 
 fontcolor=green
 
-node[shape=rect, width=1, height=1, color=gray, fontcolor=white]
+node[shape=rect, width=1, height=1, color=silver, fontcolor=white]
 
 processor [pos="0,1.25!"]
 memory [pos="1.25,1.25!"]
@@ -60,7 +60,7 @@ graph[layout=neato]
 
 fontcolor=green
 
-node[shape=rect, width=1, height=1, color=gray, fontcolor=white]
+node[shape=rect, width=1, height=1, color=silver, fontcolor=white]
 
 cpu [label=processor,pos="0,1.25!"]
 
@@ -328,7 +328,7 @@ dm -> {cpu, io}
 	- Memory
 	- [[#Program counter]]
 	- Computation
-- $ Can be inserted to avoid stalls
+- $ Can be inserted to avoid *stalls*
 
 - & Example:
 	- C <-- add A B
@@ -376,6 +376,23 @@ end
 | 6     | instr. 6 | instr. 5 | instr. 4 | instr. 3 | instr. 2 |
 | 7     | instr. 7 | instr. 6 | instr. 5 | instr. 4 | instr. 3 |
 | 8     | instr. 8 | instr. 7 | instr. 6 | instr. 5 | instr. 4 |
+
+- & Example with *stalls*
+
+- $add\ A\ B\ C$ - add *A* and *B*, put into *C*
+- $sub\ G\ K\ L$ - subtract *G* from *K* and put into *L*
+- $add\ C\ D\ M$ - add *C* and *D*, put into *M* (we have to wait for *C* from the first instruction)
+
+| clock | fetch | decode | execute | read mem | write mem |
+| ----- | ----- | ------ | ------- | -------- | --------- |
+| 1     | i. 1  |        |         |          |           |
+| 2     | i. 2  | i. 1   |         |          |           |
+| 3     | i. 3  | i. 2   | i. 1    |          |           |
+| 4     |       | i. 3   | i. 2    | i. 1     |           |
+| 5     |       |        | nop     | i. 2     | i. 1      |
+| 6     |       |        | i. 3    | nop      | i. 2      |
+| 7     |       |        |         | i. 3     | nop       | 
+| 8     |       |        |         |          | i. 3      |
 
 ## Program translation
 
@@ -489,7 +506,7 @@ graph TB;
 	- Typically
 		- **Opcode** at the beginning of instruction
 		- **Operands** follow **opcode**
-			 ```asciidoc-table
+			 ```asciidoc
 			[frame=none]
 			[cols="1,1,1,3"]
 			|===
@@ -562,10 +579,9 @@ graph TB;
 - & Example: 
 	- A *[[#Registers|register]]-offset* [[#Parts of an instruction|operand]] specifies a [[#Registers|register]] and an [[#Immediate operand|immediate]] value
 	- [[#Processor Terminology|Processor]] adds immediate value to contents of the [[#Registers|register]] and uses the result as  [[#Parts of an instruction|operand]]
-
-```asciidoc-table
+```asciidoc
 [frame=none]
-[cols="1,1,1,1,1,1,1"]
+[cols="7*"]
 |===
 ^| Opcode
 3+^| Operand 1
@@ -877,9 +893,9 @@ More info: [instruction set reference 1](https://www.dsi.unive.it/~gasparetto/ma
 > - During procedure call, **register window** moves to *hide old* [[#Registers|registers]] and *expose new* ones
 
 - Before [[#Subroutine call|calling a subroutine]] (*A*, *B*, *C*, *D* are arguments)
-```asciidoc-table
+```asciidoc
 [frame=none]
-[cols="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"]
+[cols="16*"]
 |===
 
 8+^| Registers 0-7
@@ -907,9 +923,9 @@ More info: [instruction set reference 1](https://www.dsi.unive.it/~gasparetto/ma
 ```
 
 - After [[#Subroutine call|calling a subroutine]]
-```asciidoc-table
+```asciidoc
 [frame=none]
-[cols="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"]
+[cols="16*"]
 |===
 
 4+^| Unavailable
@@ -1053,11 +1069,16 @@ More info: [instruction set reference 1](https://www.dsi.unive.it/~gasparetto/ma
 > Consider the internal structure of a CPU
 > 
 > ```ditaa
->        +---------------+     +----------+----------+    +-----------------+
->        |               |     |          |          |    |      macro      |
->        |      ALU      +---->+ result 1 | result 2 |    |  general purpose|
->        |               |     |          |          |    |    registers    |
->        +-+-----------+-+     +-------+--+--+-------+    +---------=+------+
+> ---
+> width:100%
+> inverted
+> ---
+> 
+>        +---------------+     +----------+----------+    +-----------------+ 
+>        |               |     |          |          |    |      macro      | 
+>        |      ALU      +---->+ result 1 | result 2 |    |  general purpose| 
+>        |               |     |          |          |    |    registers    | 
+>        +-+-----------+-+     +-------+--+--+-------+    +---------=+------+ 
 >          ^           ^               |     |                       |
 >          |           |               |     |        +--------------+--+
 > +--------+--+     +--+--------+      |     |        | register access |
@@ -1074,7 +1095,7 @@ More info: [instruction set reference 1](https://www.dsi.unive.it/~gasparetto/ma
 > 
 >> Example hardware control commands
 > 
-> ```asciidoc-table
+> ```asciidoc
 > [frame=none]
 > [cols="1,3,15"]
 > |===
@@ -1083,7 +1104,7 @@ More info: [instruction set reference 1](https://www.dsi.unive.it/~gasparetto/ma
 > ^| Command
 > ^| Meaning
 > 
-> .8+^| **ALU**
+> .8+^.^| **ALU**
 > 
 > ^| *0 0 0*
 > | No operation
@@ -1102,31 +1123,31 @@ More info: [instruction set reference 1](https://www.dsi.unive.it/~gasparetto/ma
 > ^| *1 1 1*
 > | Continue previous operation
 > 
-> .2+^| **operand 1**
+> .2+^.^| **operand 1**
 > ^| *0*
 > | No operation
 > ^| *1*
 > | Load value from data transfer mechanism
 > 
-> .2+^| **operand 2**
+> .2+^.^| **operand 2**
 > ^| *0*
 > | No operation
 > ^| *1*
 > | Load value from data transfer mechanism
 > 
-> .2+^| **result 1**
+> .2+^.^| **result 1**
 > ^| *0*
 > | No operation
 > ^| *1*
 > | Send value to data transfer mechanism
 > 
-> .2+^| **result 2**
+> .2+^.^| **result 2**
 > ^| *0*
 > | No operation
 > ^| *1*
 > | Send value to data transfer mechanism
 > 
-> .4+^| **register interface**
+> .4+^.^| **register interface**
 > ^| *0 0 x x x x*
 > | No operation
 > ^| *0 1 x x x x*
@@ -1147,7 +1168,7 @@ More info: [instruction set reference 1](https://www.dsi.unive.it/~gasparetto/ma
 > 3. Arrange for the *ALU* to perform the *operation*
 > 4. Move the *value* from the hardware unit for *result* **2** (low order [[Data representation#Bit (Binary digit)|bits]] of the result) to [[#Registers|register]] **4**
 > 
-> ```asciidoc-table
+> ```asciidoc
 > [frame=none]
 > [cols="3,3,3,3,3,3,4,4,3,3,3,3,3,3"]
 > |===

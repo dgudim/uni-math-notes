@@ -25,6 +25,9 @@
 > **A**
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -38,7 +41,7 @@
 >       color=green, 
 >       fillcolor = white] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > 
 > "3/b" -- {1 "2/a"}
 > "2/a" -- 1
@@ -54,6 +57,9 @@
 > **B**
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -67,7 +73,7 @@
 >       color=green, 
 >       fillcolor = white] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > 
 > a -- b
 > 
@@ -94,6 +100,9 @@
 > **A**
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -122,13 +131,13 @@
 > "-" [pos="0, 1!"] 
 > "." [pos="0,-1!"]
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > 
 > 5 -- {1 2 3 4}
 > 1 -- 3
 > 2 -- 4
 > 
-> edge [style=dashed, color=green]
+> edge [style=dashed, color=green, penwidth=2]
 > 5 -- {".", "-"}
 > 
 > } 
@@ -142,6 +151,9 @@
 > **B**
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -159,7 +171,7 @@
 > b [pos="-1,0.5!"] 
 > c [pos="0,0!"] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > 
 > a -- b
 > b -- c
@@ -178,6 +190,9 @@
 > $f(5)=c$
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -198,7 +213,7 @@
 >       height=0.65]
 > 5 [pos="0,0!"] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > 
 > 5 -- {"3,4", "1,2"}
 > "3,4" -- "1,2"
@@ -231,6 +246,9 @@
 > ## $G$
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -249,7 +267,7 @@
 > c [pos="0,0!"] 
 > d [pos="1,1!"] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 >  
 > c -- {a b d}
 > a -- {b d}
@@ -266,6 +284,9 @@
 > ## $T$
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > rankdir=LR;
@@ -282,7 +303,7 @@
 >       fillcolor = white] 
 > 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 >  
 > 3 -- {1 2 4}
 > 1 -- {2 4}
@@ -317,6 +338,9 @@ flexGrow=1
 ### D (Unlabeled)
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -335,7 +359,7 @@ a [pos="0,0!"]
 b [pos="0.5,0.8!"] 
 c [pos="1,0!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- {b} 
 c -- {b} 
@@ -350,6 +374,9 @@ flexGrow=1
 ### A (Labeled)
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -367,7 +394,7 @@ node [shape = circle,
 2 [pos="0.5,0.8!"] 
 3 [pos="1,0!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 1 -- {2} 
 1 -- {3} 
@@ -383,6 +410,9 @@ flexGrow=1
 ### B (Labeled)
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -400,7 +430,7 @@ node [shape = circle,
 2 [pos="0.5,0.8!"] 
 3 [pos="1,0!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 1 -- 2 
 3 -- 2 
@@ -416,6 +446,9 @@ flexGrow=1
 ### C (Labeled)
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -433,7 +466,7 @@ a [pos="0,0!"]
 1 [pos="0.5,0.8!"] 
 c [pos="1,0!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- {c} 
 c -- {1} 
@@ -490,6 +523,9 @@ flexGrow=1
 ### $Ga$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -510,7 +546,7 @@ node [shape = circle,
 1 [pos="1.5,-0.9!"] 
 6 [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 5 -- {4 6 1}
 2 -- {1 3 6}
@@ -528,6 +564,9 @@ flexGrow=1
 ### $Gb$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -548,7 +587,7 @@ node [shape = circle,
 1 [pos="1.5,-0.9!"] 
 6 [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 6 -- {5 1 2}
 3 -- {2 4 1}
@@ -725,6 +764,9 @@ flexGrow=1
 ### $G_1$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -738,7 +780,7 @@ node [shape = circle,
       color=green, 
       fillcolor = white] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 2 -- {1 3 4}
 1 -- 3
@@ -756,6 +798,9 @@ flexGrow=1
 
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -769,7 +814,7 @@ node [shape = circle,
       color=green, 
       fillcolor = white] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 2 -- {1 5 4}
 5 -- 3
@@ -786,6 +831,9 @@ flexGrow=1
 ### $G_3$
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 rankdir="LR";
@@ -801,7 +849,7 @@ node [shape = circle,
       color=green, 
       fillcolor = white] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 2 -- {1 3 6}
 1 -- 3
@@ -831,6 +879,10 @@ flexGrow=1
 **$G(V,E)$**
 
 ```dot 
+---
+preset:math-graph
+name:derived_0
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -850,7 +902,7 @@ c [pos="1.5,0.9!"]
 d [pos="2,0!"] 
 e [pos="1.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- b
 b -- c
@@ -870,6 +922,10 @@ flexGrow=1
 
 
 ```dot 
+---
+preset:math-graph
+name:derived_1
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -889,10 +945,10 @@ c [pos="1.5,0.9!"]
 d [pos="2,0!"] 
 e [pos="1.5,-0.9!"] 
 
-node [fillcolor=darkgreen]
+node [fillcolor=green]
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- b
 b -- c
@@ -919,35 +975,8 @@ flexGrow=1
 
 **$G_1$**
 
-```dot 
-graph neato { 
-
-bgcolor="transparent" 
-
-graph [layout = neato] 
-
-node [shape = circle, 
-      style = filled, 
-      width=0.3, 
-      height=0.3, 
-      color=green, 
-      fillcolor = white] 
-
-a [pos="0,0!"] 
-b [pos="0.5,0.9!"] 
-c [pos="1.5,0.9!"] 
-d [pos="2,0!"] 
-e [pos="1.5,-0.9!"] 
-
-edge [color = grey] 
-
-a -- b
-b -- c
-c -- d
-d -- e
-e -- a
-
-} 
+```refgraph
+derived_0
 ```
 
 ```` 
@@ -958,39 +987,8 @@ flexGrow=1
 **$G_2$**
 
 
-```dot 
-graph neato { 
-
-bgcolor="transparent" 
-
-graph [layout = neato] 
-
-node [shape = circle, 
-      style = filled, 
-      width=0.3, 
-      height=0.3, 
-      color=green, 
-      fillcolor = white] 
-
-a [pos="0,0!"] 
-b [pos="0.5,0.9!"] 
-c [pos="1.5,0.9!"] 
-d [pos="2,0!"] 
-e [pos="1.5,-0.9!"] 
-
-node [fillcolor=darkgreen]
-f 
-
-edge [color = grey] 
-
-a -- b
-b -- c
-c -- d
-d -- e
-e -- f
-f -- a
-
-} 
+```refgraph 
+derived_1
 ```
 
 ```` 
@@ -1003,6 +1001,9 @@ flexGrow=1
 
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -1022,11 +1023,11 @@ c [pos="1.5,0.9!"]
 d [pos="2,0!"] 
 e [pos="1.5,-0.9!"] 
 
-node [fillcolor=darkgreen]
+node [fillcolor=green]
 f [pos="0.7,-1.2!"] 
 i [pos="0,-0.8!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- b
 b -- c

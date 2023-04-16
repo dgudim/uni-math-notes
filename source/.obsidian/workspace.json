@@ -23,13 +23,26 @@
             }
           },
           {
-            "id": "134d163d3b031ab2",
+            "id": "cf1dc40ef7e72f93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "uni/Discrete math/Graphs/Graphs - trees.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d2f715cb44ea6152",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/Computer architecture/Processor.md",
+                "file": "uni/Discrete math/Graphs/Graphs - directed graphs, applications.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -38,20 +51,22 @@
             }
           },
           {
-            "id": "7db0adf5d48cab96",
+            "id": "0bbaa7755f972cac",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/Computer architecture/Processor.md",
+                "file": "uni/Discrete math/Graphs/Graphs - basics.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/Computer architecture/Processor.md"
+                "file": "uni/Discrete math/Graphs/Graphs - trees.md"
               }
             }
           }
@@ -114,7 +129,7 @@
       {
         "id": "2fe59792a580522e",
         "type": "tabs",
-        "dimension": 19.326923076923077,
+        "dimension": 22.5,
         "children": [
           {
             "id": "1437062a60a2a793",
@@ -122,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "uni/Computer architecture/Processor.md",
+                "file": "uni/Discrete math/Graphs/Graphs - trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "uni/Computer architecture/Processor.md",
+                "file": "uni/Discrete math/Graphs/Graphs - trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +166,7 @@
       {
         "id": "e79b3fc7c8058b44",
         "type": "tabs",
-        "dimension": 19.326923076923077,
+        "dimension": 19.230769230769234,
         "children": [
           {
             "id": "b75c4adf180ddf92",
@@ -169,7 +184,7 @@
       {
         "id": "6c0310e10a98c0e0",
         "type": "tabs",
-        "dimension": 27.692307692307693,
+        "dimension": 24.61538461538462,
         "children": [
           {
             "id": "e61c9fb5d54c6cd4",
@@ -214,69 +229,68 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 360.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "3d-graph:3D Graph": false,
       "webpage-html-export:Export Vault to HTML": false,
-      "homepage:Open homepage": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "7db0adf5d48cab96",
+  "active": "cf1dc40ef7e72f93",
   "lastOpenFiles": [
-    "export/uni/computer-architecture/images/59b633a4abc750132638cce218fade87.svg",
-    "export/uni/computer-architecture/images/135db6616ff1fddc7512992e7397b42b.svg",
-    "export/uni/computer-architecture/images",
-    "export/uni/computer-architecture/attachements/priv_rings.svg",
-    "export/uni/computer-architecture/attachements/endianness_had.webp",
-    "export/uni/computer-architecture/attachements",
-    "export/uni/computer-architecture/recode-v1l5gT.tmp",
-    "export/uni/computer-architecture/recode-sF4hxb.tmp",
-    "export/uni/computer-architecture/recode-fzpkjp.tmp",
-    "export/uni/images/59b633a4abc750132638cce218fade87.svg",
-    "export/uni/images/135db6616ff1fddc7512992e7397b42b.svg",
-    "export/uni/images",
-    "export/uni/attachements/priv_rings.svg",
-    "export/uni/attachements/endianness_had.webp",
-    "export/uni/attachements",
-    "uni/Computer architecture/Data representation.md",
-    "export/uni/computer-architecture/webpage.js",
-    "export/uni/computer-architecture/snippets.css",
-    "export/uni/computer-architecture/theme.css",
-    "uni/Computer architecture/Processor.md",
-    "Home.md",
-    "uni/Misc/Git presentation.md",
-    "uni/Untitled.md",
-    "uni/Discrete math/Graphs/Graphs - basics.md",
+    "export/uni/discrete-math/graphs/graphs---trees.html",
     "uni/Discrete math/Graphs/Graphs - shortest path.md",
+    "uni/Discrete math/Graphs/Graphs - directed graphs, applications.md",
+    "export/uni/discrete-math/graphs/graphs---shortest-path.html",
     "uni/Discrete math/Graphs/Graphs - planarity.md",
-    "uni/Discrete math/Graphs/Graphs - morphism.md",
-    "uni/Discrete math/Graphs/Graphs - metrics.md",
-    "uni/Discrete math/Graphs/Graphs - metrics2.md",
-    "uni/Discrete math/Graphs/Graphs - connectivity.md",
-    "uni/Discrete math/Graphs/Graphs - trees.md",
+    "export/uni/discrete-math/graphs/graphs---planarity.html",
     "uni/Discrete math/Graphs/Graphs - operations.md",
-    "uni/Computer architecture/attachements/Priv_rings.svg",
+    "export/uni/discrete-math/graphs/graphs---operations.html",
+    "uni/Discrete math/Graphs/Graphs - morphism.md",
+    "export/uni/discrete-math/graphs/graphs---morphism.html",
+    "uni/Discrete math/Graphs/Graphs - metrics2.md",
+    "export/uni/discrete-math/graphs/graphs---metrics2.html",
+    "uni/Discrete math/Graphs/Graphs - metrics.md",
+    "export/uni/discrete-math/graphs/graphs---metrics.html",
+    "export/uni/discrete-math/graphs/graphs---directed-graphs,-applications.html",
+    "uni/Discrete math/Graphs/Graphs - connectivity.md",
+    "export/uni/discrete-math/graphs/graphs---connectivity.html",
+    "uni/Discrete math/Graphs/Graphs - coloring.md",
+    "uni/Discrete math/Graphs/Graphs - basics.md",
+    "uni/Discrete math/Graphs/Graphs - trees.md",
+    "export/uni/discrete-math/graphs/graphs---coloring.html",
+    "Home.md",
+    "export/uni/discrete-math/graphs/graphs---basics.html",
+    "uni/Index.md",
     "Reference.md",
-    "uni/English/Midterm1 (w6)/Midterm1_plagiarism_spying (w6).md",
+    "uni/Computer architecture/Data representation.md",
+    "uni/English/Research proposal (w7, w8, w9)/Proporal parts 3 and 4 - OS (w9).md",
+    "uni/English/Research proposal (w7, w8, w9)/Proposal parts 1 and 2 - AI (w8).md",
+    "uni/Computer architecture/Processor.md",
+    "uni/English/Research proposal (w7, w8, w9)/General info (w7).md",
     "uni/English/Midterm1 (w6)/text2.md",
-    "uni/English/Research proposal (w7)/General info (w7).md",
-    "uni/English/Midterm1 (w6)/text1.png",
-    "export/README.md",
-    "Scheduler.md",
-    "uni/English/ethics (w3)/Transcript.md",
-    "conflict-files-obsidian-git.md",
-    "Films_etc/Watched.md",
-    "Films_etc/ToWatch.md",
-    "uni/English/networks-wifi (w4, w5)/Networks 2 (w5).md",
+    "uni/Management/Lecture2.md",
+    "uni/Management/img/goal-subj.png",
+    "uni/Management/Lecture1.md",
+    "uni/Management/img/external-env.png",
+    "uni/Management/img/open-system-model.png",
+    "uni/Management/img/Lecture 6 - Control and Accounting9.png",
+    "uni/Management/img/Lecture 6 - Control and Accounting8.jpg",
+    "uni/Management/img/Lecture 6 - Control and Accounting7.jpg",
+    "uni/Management/img/Lecture 6 - Control and Accounting6.png",
+    "uni/Management/img/Lecture 6 - Control and Accounting5.png",
+    "uni/Management/img/Lecture 6 - Control and Accounting4.png",
+    "uni/Management/img/Lecture 6 - Control and Accounting3.png",
+    "uni/Management/Lecture6.md",
+    "uni/Management/Lecture5.md",
+    "uni/Management/Lecture4.md",
     "Untitled.canvas"
   ]
 }

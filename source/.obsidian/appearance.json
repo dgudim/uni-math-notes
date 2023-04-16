@@ -8,15 +8,15 @@
   "nativeMenus": false,
   "enabledCssSnippets": [
     "8 + 8 highlight colors",
-    "Combine Nested tag colors and Highlight colors ",
     "big-math",
-    "banner-fix",
+    "Combine Nested tag colors and Highlight colors ",
+    "dialogs",
     "fix_highligh",
     "kanban",
-    "list_padding",
-    "dialogs",
     "mermaid",
-    "width-800px"
+    "slides-theme-colors",
+    "width-800px",
+    "list_padding"
   ],
   "showViewHeader": true,
   "theme": "system"

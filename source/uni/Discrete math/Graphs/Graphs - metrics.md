@@ -21,6 +21,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -41,7 +44,7 @@ node [shape = circle,
 5 [pos="1.5,-0.9!"] 
 6 [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 1 -- 2
 2 -- 3
@@ -58,14 +61,14 @@ edge [color = grey]
 flexGrow=1
 ===
 
-|     | #c/white **1**  | #c/white **2** | #c/white **3** | #c/white **4** | #c/white **5** | #c/white **6** | 
+|     |  1  |  2 |  3 | 4 | 5 | 6 | 
 | --- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
-| #c/white **1**   | X              | #c/green **1** | **2**          | #c/red **3**   | **2**          | #c/green **1** |
-| #c/white **2**   | #c/green **1** | X              | #c/green **1** | **2**          | #c/red **3**   | **2**          |
-| #c/white **3**   | **2**          | #c/green **1** | X              | #c/green **1** | **2**          | #c/red **3**   |
-| #c/white **4**   | #c/red **3**   | **2**          | #c/green **1** | X              | #c/green **1** | **2**          |
-| #c/white **5**   | **2**          | #c/red **3**   | **2**          | #c/green **1** | X              | #c/green **1** |
-| #c/white **6**   | #c/green **1** | **2**          | #c/red **3**   | **2**          | #c/green **1** | X              |
+| 1 | X              | #c/green **1** | **2**          | #c/red **3**   | **2**          | #c/green **1** |
+| 2 | #c/green **1** | X              | #c/green **1** | **2**          | #c/red **3**   | **2**          |
+| 3 | **2**          | #c/green **1** | X              | #c/green **1** | **2**          | #c/red **3**   |
+| 4 | #c/red **3**   | **2**          | #c/green **1** | X              | #c/green **1** | **2**          |
+| 5 | **2**          | #c/red **3**   | **2**          | #c/green **1** | X              | #c/green **1** |
+| 6 | #c/green **1** | **2**          | #c/red **3**   | **2**          | #c/green **1** | X              |
 
 ````
 `````
@@ -172,6 +175,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -192,7 +198,7 @@ d [pos="2,0!"]
 e [pos="1.5,-0.9!"] 
 f [pos="0.5,-0.9!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- {c d} 
 b -- {c a d}

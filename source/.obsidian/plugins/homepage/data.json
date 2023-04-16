@@ -1,18 +1,22 @@
 {
-  "version": 2,
-  "defaultNote": "Home",
-  "useMoment": false,
-  "momentFormat": "YYYY-MM-DD",
-  "workspace": "Home",
-  "workspaceEnabled": false,
-  "openOnStartup": true,
-  "hasRibbonIcon": true,
-  "openMode": "Keep open notes",
-  "manualOpenMode": "Keep open notes",
-  "view": "Default view",
-  "revertView": true,
-  "refreshDataview": false,
-  "autoCreate": true,
-  "autoScroll": false,
-  "pin": true
+  "version": 3,
+  "homepages": {
+    "Main Homepage": {
+      "version": 2,
+      "openOnStartup": true,
+      "hasRibbonIcon": true,
+      "openMode": "Keep open notes",
+      "manualOpenMode": "Keep open notes",
+      "view": "Default view",
+      "revertView": true,
+      "refreshDataview": false,
+      "autoCreate": true,
+      "autoScroll": false,
+      "pin": true,
+      "value": "Home",
+      "kind": "File",
+      "commands": []
+    }
+  },
+  "separateMobile": false
 }

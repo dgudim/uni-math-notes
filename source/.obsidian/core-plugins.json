@@ -4,7 +4,6 @@
   "switcher",
   "graph",
   "backlink",
-  "canvas",
   "outgoing-link",
   "tag-pane",
   "page-preview",
@@ -14,5 +13,6 @@
   "slash-command",
   "editor-status",
   "starred",
-  "outline"
+  "outline",
+  "slides"
 ]

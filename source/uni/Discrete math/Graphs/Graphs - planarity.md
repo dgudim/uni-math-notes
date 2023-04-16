@@ -10,6 +10,9 @@ flexGrow=1
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 bgcolor="transparent" 
@@ -28,7 +31,7 @@ b [pos="0,1!"]
 c [pos="0,0!"] 
 d [pos="1,1!"] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- {b d} 
 c -- {a d b} 
@@ -42,6 +45,9 @@ flexGrow=2
 ===
 
 ```dot 
+---
+preset:math-graph
+---
 graph neato { 
 
 rankdir=LR;
@@ -57,7 +63,7 @@ node [shape = circle,
       color=green, 
       fillcolor = white] 
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 a -- {b d} 
 c -- {a d b} 
@@ -73,14 +79,11 @@ d -- {b}
 > [!definition] 
 > **Area** of a [[#Planar graph|planar]] graph is the *biggest* possible area of plane where *any two points* can be connected by *line* that does not intersect with [[Graphs - basics#Undirected graph|edges]]
 
-```tikz
-\usepackage{tikz}
-
-\definecolor{green_g}{HTML}{B8BB26}
-\definecolor{orange_g}{HTML}{FE8019}
-\definecolor{blue_g}{HTML}{83A598}
-
-\begin{document}
+```latex
+---
+preset:default-tikz
+width:450px
+---
 
 \begin{tikzpicture}[very thick]
    % NODES
@@ -91,9 +94,9 @@ d -- {b}
    \node at ( 1.2,  2.0) (3) {}; % 3
 
    % DRAW AREAS
-   \fill[fill=orange_g] (a.center)--(2.center)--(3.center);
-   \fill[fill=green_g]  (c.center)--(2.center)--(3.center);
-   \fill[fill=blue_g]   (a.center)--(c.center)--(1.center);
+   \fill[fill=orange] (a.center)--(2.center)--(3.center);
+   \fill[fill=green]  (c.center)--(2.center)--(3.center);
+   \fill[fill=blue]   (a.center)--(c.center)--(1.center);
    
    % DRAW CONNECTIONS
    \path[draw] (a)--(c);
@@ -104,15 +107,12 @@ d -- {b}
    \path[draw] (1)--(c);
 
    % DRAW NODES
-   \draw[color=white, fill=black] (a) circle (0.4) node {\Huge a};
-   \draw[color=white, fill=black] (1) circle (0.4) node {\Huge 1};
-   \draw[color=white, fill=black] (2) circle (0.4) node {\Huge 2};
-   \draw[color=white, fill=black] (3) circle (0.4) node {\Huge 3};
-   \draw[color=white, fill=black] (c) circle (0.4) node {\Huge c};
+   \draw[color=black, fill=white] (a) circle (0.4) node {\Huge a};
+   \draw[color=black, fill=white] (1) circle (0.4) node {\Huge 1};
+   \draw[color=black, fill=white] (2) circle (0.4) node {\Huge 2};
+   \draw[color=black, fill=white] (3) circle (0.4) node {\Huge 3};
+   \draw[color=black, fill=white] (c) circle (0.4) node {\Huge c};
 
-\end{tikzpicture}
-
-\end{document}
 ```
 
 ## Theorems
@@ -129,6 +129,9 @@ d -- {b}
 > ### $K_{3,3}$
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -149,7 +152,7 @@ d -- {b}
 > 2 [pos="1,-1!"] 
 > 3 [pos="2,-1!"] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > 
 > a -- {1 2 3}
 > b -- {1 2 3}
@@ -166,6 +169,9 @@ d -- {b}
 > ### $K_{5}$
 > 
 > ```dot 
+> ---
+> preset: math-graph
+> ---
 > graph neato { 
 > 
 > bgcolor="transparent" 
@@ -185,7 +191,7 @@ d -- {b}
 > d [pos="1.9,-0.1!"] 
 > e [pos="1,-0.8!"] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 >  
 > a -- {b c d e}
 > b -- {c d e}

@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FasDesktop",
-      "SiArtifacthub",
-      "RiCpu-line",
-      "RiCpu-fill",
-      "LiBinary"
+      "FasArrow-trend-up",
+      "FabGit-alt",
+      "😀",
+      "SiGit",
+      "FasDesktop"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -34,5 +34,7 @@
   "uni/Computer architecture": "FasDesktop",
   "uni/Computer architecture/Data representation.md": "LiBinary",
   "uni/Computer architecture/Processor.md": "LiCpu",
-  "uni/Misc": "SiArtifacthub"
+  "uni/Presentations": "SiArtifacthub",
+  "uni/Presentations/Git presentation.md": "FabGit-alt",
+  "uni/Management": "FasArrow-trend-up"
 }

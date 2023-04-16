@@ -29,14 +29,14 @@ How to use highlight code syntax:：
 .white   rgb(255,255,255)	
 .black   rgb(0,0,0)    
   
-.red     rgb(255,0,0)
-.aqua    rgb(0,255,255) 
+.red     var(--g-color-light-red)
+.aqua    var(--g-color-light-cyan)
 
 .fuchsia rgb(255,0,255) .pink
-.green   rgb(0,255,0)    
+.green   var(--g-color-light-green)
 
-.yellow  rgb(255,255,0)   
-.blue    rgb(0,0,255)    
+.yellow  var(--g-color-light-yellow)
+.blue    var(--g-color-light-blue)
 
 /* 8 pairs middle colors  
 
@@ -127,28 +127,28 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag-hnavy
 
 /* -- red --  */
 .cm-tag-hred ~ span.cm-highlight{
-	background-color: rgb(255,0,0) !important;
+	background-color: var(--g-color-light-red) !important;
 }
 
 .cm-tag-hred ~ span.cm-strong {
-	color: rgb(255,0,0);
+	color: var(--g-color-light-red);
 }
 
 .cm-tag-hred ~ span.cm-em {
-	color: rgb(255,0,0);
+	color: var(--g-color-light-red);
 }
 
 /* -- aqua --  */
 .cm-tag-haqua ~ span.cm-highlight{
-	background-color: rgb(0,255,255)!important;
+	background-color: var(--g-color-light-cyan)!important;
 }
 
 .cm-tag-haqua ~ span.cm-strong {
-	color: rgb(0,255,255);
+	color: var(--g-color-light-cyan);
 }
 
 .cm-tag-haqua ~ span.cm-em {
-	color: rgb(0,255,255);
+	color: var(--g-color-light-cyan);
 }
 
 /* -- fuchsia --  */
@@ -180,43 +180,43 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag-hnavy
 
 /* -- green --  */
 .cm-tag-hgreen ~ span.cm-highlight{
-	background-color: rgb(0,255,0)!important;
+	background-color: var(--g-color-light-green)!important;
 }
 
 .cm-tag-hgreen ~ span.cm-strong {
-	color: rgb(0,255,0);
+	color: var(--g-color-light-green);
 }
 
 .cm-tag-hgreen ~ span.cm-em {
-	color: rgb(0,255,0);
+	color: var(--g-color-light-green);
 }
 
 /* -- yellow --  */
 .cm-tag-hyellow ~ span.cm-highlight{
-	background-color: rgb(255,255,0) !important;
+	background-color: var(--g-color-light-yellow) !important;
     color: black !important;
 }
 
 .cm-tag-hyellow ~ span.cm-strong {
-	color: rgb(255,255,0) ;
+	color: var(--g-color-light-yellow) ;
 }
 
 .cm-tag-hyellow ~ span.cm-em {
-	color: rgb(255,255,0) ;
+	color: var(--g-color-light-yellow) ;
 }
 
 
 /* -- blue --  */
 .cm-tag-hblue ~ span.cm-highlight{
-	background-color: rgb(0,0,255) !important;
+	background-color: var(--g-color-light-blue) !important;
 }
 
 .cm-tag-hblue ~ span.cm-strong {
-	color: rgb(0,0,255);
+	color: var(--g-color-light-blue);
 }
 
 .cm-tag-hblue ~ span.cm-em {
-	color: rgb(0,0,255);
+	color: var(--g-color-light-blue);
 }
 
 
@@ -369,33 +369,33 @@ a[href^="#c/black"] + em {
 
 /* -- red --  */
 a[href^="#c/red"] + mark {
-	background-color: rgb(255,0,0) !important;
+	background-color: var(--g-color-light-red) !important;
 }
 
 a[href^="#c/red"] + strong {
-	color: rgb(255,0,0);
+	color: var(--g-color-light-red);
 }
 
 a[href^="#c/red"] + em {
-	color: rgb(255,0,0);
+	color: var(--g-color-light-red);
 }
 
 /* -- aqua --  */
 a[href^="#c/aqua"] + mark {
-	background-color: rgb(0,255,255)!important;
+	background-color: var(--g-color-light-cyan) !important;
 }
 
 a[href^="#c/aqua"] + strong {
-	color: rgb(0,255,255);
+	color: var(--g-color-light-cyan);
 }
 
 a[href^="#c/aqua"] + em {
-	color: rgb(0,255,255);
+	color: var(--g-color-light-cyan);
 }
 
 /* -- fuchsia --  */
 a[href^="#c/fuchsia"] + mark {
-	background-color: rgb(255,0,255)!important;
+	background-color: rgb(255,0,255) !important;
 }
 
 a[href^="#c/fuchsia"] + strong {
@@ -422,43 +422,43 @@ a[href^="#c/pink"] + em {
 
 /* -- green --  */
 a[href^="#c/green"] + mark {
-	background-color: rgb(0,255,0)!important;
+	background-color: var(--g-color-light-green) !important;
 }
 
 a[href^="#c/green"] + strong {
-	color: rgb(0,255,0);
+	color: var(--g-color-light-green);
 }
 
 a[href^="#c/green"] + em {
-	color: rgb(0,255,0);
+	color: var(--g-color-light-green);
 }
 
 /* -- yellow --  */
 a[href^="#c/yellow"] + mark {
-	background-color: rgb(255,255,0) !important;
+	background-color: var(--g-color-light-yellow) !important;
     color: black !important;
 }
 
 a[href^="#c/yellow"] + strong {
-	color: rgb(255,255,0) ;
+	color: var(--g-color-light-yellow);
 }
 
 a[href^="#c/yellow"] + em {
-	color: rgb(255,255,0) ;
+	color: var(--g-color-light-yellow);
 }
 
 
 /* -- blue --  */
 a[href^="#c/blue"] + mark {
-	background-color: rgb(0,0,255) !important;
+	background-color: var(--g-color-light-blue) !important;
 }
 
 a[href^="#c/blue"] + strong {
-	color: rgb(0,0,255);
+	color: var(--g-color-light-blue);
 }
 
 a[href^="#c/blue"] + em {
-	color: rgb(0,0,255);
+	color: var(--g-color-light-blue);
 }
 
 

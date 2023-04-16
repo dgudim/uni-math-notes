@@ -8,10 +8,10 @@
       "obsidianBlockName": "blockdiag",
       "description": "block diag !!",
       "url": "https://github.com/blockdiag/blockdiag",
-      "enabled": true,
+      "enabled": false,
       "toggle": {
         "disabled": false,
-        "on": true,
+        "on": false,
         "toggleEl": {}
       }
     },

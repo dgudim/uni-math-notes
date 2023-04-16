@@ -127,7 +127,7 @@
 
 ##### Any system to decimal
 
-$$\large (x_{n-1},x_{n-2},\dots ,x_{0},x_{-1},x_{-2}, \dots ,x_{-l})=\sum_{i=-l}^{n-1}x_{i}*p^i$$
+$$(x_{n-1},x_{n-2},\dots ,x_{0},x_{-1},x_{-2}, \dots ,x_{-l})=\sum_{i=-l}^{n-1}x_{i}*p^i$$
 
 - *n* - amount of decimals <u>before</u> the coma
 - *i* - amount of decimals <u>after</u> the coma
@@ -355,7 +355,34 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 
 ### Endianness
 
-![[endianness_had.webp]]
+`````col 
+````col-md 
+flexGrow=1
+===
+
+```dynamic-svg
+---
+inverted
+width:100%
+---
+[[Little-Endian.svg]]
+```
+
+```` 
+````col-md 
+flexGrow=1
+===
+
+```dynamic-svg
+---
+inverted
+width:100%
+---
+[[Big-Endian.svg]]
+```
+
+```` 
+`````
 
 #### Little endian
 
@@ -407,7 +434,7 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 > Widely adopted by computer architects
 
 - *Single precision format*
-```asciidoc-table
+```asciidoc
 [cols="3,8,23"]
 |===
 | S | Exponent | Mantissa
@@ -420,7 +447,7 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 ```
 
 - *[[Processor#Double precision|Double precision]] format*
-```asciidoc-table
+```asciidoc
 [cols="3,8,23"]
 |===
 | S | Exponent | Mantissa
@@ -442,7 +469,7 @@ $B43_{16} = 1011 \ 0100 \ 0011_{2}$
 > 	- The leading *1* of the *mantissa* is not stored, giving *1010 0000*
 > - The result is
 > 
-> ```asciidoc-table
+> ```asciidoc
 > [cols="3,8,22"]
 > |===
 > | S | Exponent | Mantissa

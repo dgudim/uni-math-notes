@@ -46,7 +46,7 @@ flexGrow=1
 
 ## Graph $G_{b}$
 
-$(\emptyset,\emptyset)$
+$\Large (\emptyset,\emptyset)$
 
 ````
 `````
@@ -74,11 +74,11 @@ node [shape = circle,
 a [pos = "0,0!"]
 b [pos = "2,0!"]
 
-node [shape = rhomb, color=yellow, fillcolor = green]
+node [shape = rhomb, color=yellow, fillcolor = lightgreen]
 
 1 [pos = "1,0!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- 1
 1 -- b
@@ -105,7 +105,7 @@ node [shape = rhomb,
       width=0.3, 
       height=0.3, 
       color=yellow, 
-      fillcolor = green] 
+      fillcolor = lightgreen] 
 1
 
 } 
@@ -138,13 +138,13 @@ a [pos = "0,0!"]
 b [pos = "2,0!"]
 c [pos = "1,-1.5!"]
 
-node [shape = rhomb, color=yellow, fillcolor = green]
+node [shape = rhomb, color=yellow, fillcolor = lightgreen]
 
 1 [pos = "1,0!"]
 2 [pos = "0.5,-0.75!"]
 3 [pos = "1.5,-0.75!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 a -- 1
 1 -- b
@@ -172,13 +172,13 @@ node [shape = rhomb,
       width=0.3, 
       height=0.3, 
       color=yellow, 
-      fillcolor = green] 
+      fillcolor = lightgreen] 
 
 1 [pos = "1,0!"]
 2 [pos = "0.5,-0.75!"]
 3 [pos = "1.5,-0.75!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
 
 1 -- 2
 2 -- 3
@@ -222,15 +222,14 @@ edge [color = grey]
 > a [pos="1,0!"] 
 > b [pos="0,1!"] 
 > 
-> node [fillcolor = red]
+> node [fillcolor = pink]
 > c [pos="0,0!"] 
 > d [pos="1,1!"] 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 >  
 > a -- {b d} 
-> c -- {b} 
-> d -- {b} 
+> b -- {c d}
 > 
 > } 
 > ```
@@ -276,7 +275,7 @@ c [pos="1.5,0.9!"]
 d [pos="2,0!"] 
 e [pos="1.5,-0.9!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 b -- {c d e a}
 a -- {d e}
@@ -311,7 +310,7 @@ c [pos="1.5,0.9!"]
 d [pos="2,0!"] 
 e [pos="1.5,-0.9!"]
 
-edge [color = grey] 
+edge [color = lightgrey] 
  
 c -- {e d a}
 d -- e
@@ -345,14 +344,14 @@ d -- e
 >       style = filled, 
 >       width=0.3, 
 >       height=0.3, 
->       color=green, 
+>       color=darkgreen, 
 >       fillcolor = white] 
 > a d e g
 > 
 > node [fillcolor = green]
 > c b f
 > 
-> edge [color = lightgreen]
+> edge [color = lightgreen, penwidth=2]
 > f -- {e d g}
 > a -- b
 > b -- d
@@ -361,7 +360,7 @@ d -- e
 > c -- d
 > 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > e -- d
 > 
 > } 
@@ -395,7 +394,7 @@ d -- e
 >       style = filled, 
 >       width=0.3, 
 >       height=0.3, 
->       color=green, 
+>       color=darkgreen, 
 >       fillcolor = white] 
 > g
 > 
@@ -405,13 +404,13 @@ d -- e
 > node [fillcolor = yellow]
 > d
 > 
-> node [fillcolor = red]
+> node [fillcolor = pink]
 > a b c
 > 
 > edge [color = lightgreen]
 > 
 > 
-> edge [color = grey] 
+> edge [color = lightgrey] 
 > e -- d
 > a -- b
 > b -- d

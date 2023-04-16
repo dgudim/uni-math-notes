@@ -15,7 +15,7 @@ node [shape = circle,
       style = filled,
       width=0.3,
       height=0.3,
-      color = grey,
+      color = lightgray,
       label = ""]
 
 node [fillcolor = red]
@@ -26,7 +26,7 @@ b c d
 
 node [fillcolor = orange]
 
-edge [color = grey]
+edge [color = lightgray]
 a -> {b c d}
 b -> {e f g h i j}
 c -> {k l m n o p}
@@ -46,7 +46,7 @@ $$
 
 > Line, whose initial and final vertices coincide, is called a **loop**
 
-> A multi-graph that contains no parallel lines is called **directed graph** or **digraph**. 
+> A multi-graph that contains no parallel lines is called a [[Graphs - directed graphs, applications|directed graph]] or **digraph**. 
 
 > **Digraph** without loops is a **simple digraph**.
 
@@ -71,7 +71,7 @@ node [shape = circle,
       style = filled,
       width=0.3,
       height=0.3,
-      color = grey,
+      color = lightgray,
       label = ""]
 
 node [fillcolor = red]
@@ -82,7 +82,7 @@ b c d
 
 node [fillcolor = orange]
 
-edge [color = grey]
+edge [color = lightgray]
 a -> {b c d}
 b -> a
 c -> a
@@ -107,7 +107,7 @@ node [shape = circle,
       style = filled,
       width=0.3,
       height=0.3,
-      color = grey,
+      color = lightgray,
       label = ""]
 
 node [fillcolor = red]
@@ -118,7 +118,7 @@ b c d
 
 node [fillcolor = orange]
 
-edge [color = grey]
+edge [color = lightgray]
 a -- {b c d}
 
 }
@@ -135,21 +135,22 @@ a -- {b c d}
 
 # Defining a graph
 
-$$
-V = \{a, b, c, d, e\}
-$$
-$$
-E = \{\{a, b\}, \{a, c\}, \{a, d\}, \{b, c\}, \{b, d\}, \{d, e\}\},
-$$
-$$
-G = (V, E)
-$$
-OR
-$$
-G = (\{a, b, c, d, e\}, \{\{a, b\}, \{a, c\}, \{a, d\}, \{b, c\}, \{b, d\}, \{d, e\}\})
-$$
+> Defining *vertices* and *edges* separately
+
+$V = \{a, b, c, d, e\}$
+
+$E = \{\{a, b\}, \{a, c\}, \{a, d\}, \{b, c\}, \{b, d\}, \{d, e\}\}$
+
+$G = (V, E)$
+
+> Defining *vertices* and *edges* together
+
+$G = (\{a, b, c, d, e\}, \{\{a, b\}, \{a, c\}, \{a, d\}, \{b, c\}, \{b, d\}, \{d, e\}\})$
 
 ```dot
+---
+preset:math-graph
+---
 graph neato {
 
 bgcolor="transparent"
@@ -160,11 +161,10 @@ node [shape = circle,
       style = filled,
       width=0.3,
       height=0.3,
-      color = grey]
-
-node [fillcolor = white]
-
-edge [color = grey]
+      color = gray,
+      fillcolor = white]
+      
+edge [color = lightgray]
 a -- {b c d}
 c -- {b}
 d -- {e, b}
@@ -180,12 +180,11 @@ d -- {e, b}
 
 > Order of graph $G = (V, E)$ is $|V| = n$ (number of vertices)
 
-
 ## Special graphs
 
 $G = (V, \emptyset)$ - **empty**
 $G = (\emptyset, \emptyset)$ - **null**
-$G = (\{V\}, \emptyset)$ - **trivials**
+$G = (\{V\}, \emptyset)$ - **trivial**
 
 ### Complete graph
 
@@ -195,6 +194,9 @@ $G = (\{V\}, \emptyset)$ - **trivials**
 \end{flalign*}$$[[Graphs - basics#Undirected graph|edge]] is is **complete** ($K_{n}$)
 
 ```dot
+---
+preset:math-graph
+---
 graph neato {
 
 bgcolor="transparent"
@@ -205,15 +207,14 @@ node [shape = circle,
       style = filled,
       width=0.3,
       height=0.3,
-      color = grey,
+      color = gray,
       fillcolor = white]
 
-edge [color = grey]
+edge [color = lightgray]
 a -- {b c d e}
 b -- {c d e}
 c -- {d e}
 d -- {e}
-
 }
 ```
 
@@ -222,11 +223,14 @@ d -- {e}
 
 ### Properties
 
-1. $A$ and $B$ are **adjacent**, C and D are not. Also see [[#Adjacency matrix]]
-2. $A$ and $B$ are **incident** to edge $\{a, b\}$. Also see [[#Incidence matrix]]
+1. *$A$* and *$B$* are **adjacent**, *$C$* and *$D$* are not. Also see: [[#Adjacency matrix]]
+2. *$A$* and *$B$* are **incident** to edge $\{a, b\}$. Also see: [[#Incidence matrix]]
 3. Edges $\{a,d\}$ and $\{e,d\}$ are **adjacent**
 
 ```dot
+---
+preset:math-graph
+---
 graph neato {
 
 bgcolor="transparent"
@@ -247,17 +251,18 @@ a b
 node [fillcolor = red]
 c d
 
-edge [color = lightgreen]
-a -- b
-
-edge [color = yellow]
-d -- e
-d -- a
-
-edge [color = grey]
+edge [color = lightgrey]
 a -- c
 b -- c
 d -- b
+
+edge [color = lightgreen, penwidth=2]
+a -- b
+
+edge [color = yellow, penwidth=2]
+d -- e
+d -- a
+
 }
 ```
 
@@ -332,7 +337,7 @@ $$
 
 ### Neighborhood of vertices
 
-> $\Gamma(vertex)=${set of adjacent vertices}
+> $\Gamma(vertex)=${set of [[#Properties|adjacent]] vertices}
 
 In out [[#Properties|graph]]:
 - $\Gamma(A)=${b, c, d}
@@ -341,10 +346,9 @@ In out [[#Properties|graph]]:
 - $\Gamma(D)=${a, b, e}
 - $\Gamma(E)=${d}
 
-
 ### Order (degree) of vertices
 
-Order/degree of vertex $p(V)= | \Gamma(V) |$ 
+**Order/degree** of vertex $p(V)= | \Gamma(V) |$ 
 
 > Number of [[#Neighborhood of vertices|neighbours]]
 > For example: $p(A) = 3$ 
@@ -353,7 +357,6 @@ Order/degree of vertex $p(V)= | \Gamma(V) |$
 > Vertex of directed graph has both **indegree** and **outdegree**
 
 Also see [[#Graph order]]
-
 
 ### Number of graph edges
 

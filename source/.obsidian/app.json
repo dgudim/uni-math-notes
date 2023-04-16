@@ -6,7 +6,7 @@
   "trashOption": "none",
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./attachements",
+  "attachmentFolderPath": "./",
   "alwaysUpdateLinks": true,
   "livePreview": true,
   "spellcheck": true,
@@ -15,8 +15,8 @@
   "readableLineLength": true,
   "pdfExportSettings": {
     "includeName": true,
-    "pageSize": "Letter",
-    "landscape": false,
+    "pageSize": "Tabloid",
+    "landscape": true,
     "margin": "0",
     "downscalePercent": 100
   },
@@ -25,5 +25,6 @@
   "showInlineTitle": true,
   "userIgnoreFilters": [
     "export/"
-  ]
+  ],
+  "rightToLeft": false
 }
