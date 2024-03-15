@@ -1,0 +1,795 @@
+{
+  "vaultName": "obsidian_vault",
+  "lastExport": 1710517258992,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title highlightr-rounded",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "uni/Computer architecture/Data representation.md",
+    "uni/Computer architecture/IO.md",
+    "uni/Computer architecture/Memory.md",
+    "uni/Computer architecture/Processor.md",
+    "uni/Discrete math/Graphs/Graphs - basics.md",
+    "uni/Discrete math/Graphs/Graphs - coloring.md",
+    "uni/Discrete math/Graphs/Graphs - connectivity.md",
+    "uni/Discrete math/Graphs/Graphs - directed graphs, applications.md",
+    "uni/Discrete math/Graphs/Graphs - metrics.md",
+    "uni/Discrete math/Graphs/Graphs - metrics2.md",
+    "uni/Discrete math/Graphs/Graphs - morphism.md",
+    "uni/Discrete math/Graphs/Graphs - operations.md",
+    "uni/Discrete math/Graphs/Graphs - planarity.md",
+    "uni/Discrete math/Graphs/Graphs - shortest path.md",
+    "uni/Discrete math/Graphs/Graphs - trees.md",
+    "uni/Discrete math/Number theory/Divisors, multiples, primes.md",
+    "uni/Discrete math/Number theory/Huffman codes.md",
+    "uni/Discrete math/Number theory/Residue classes, divisibility.md",
+    "uni/Discrete math/Number theory/RSA, ECC.md",
+    "uni/Lithuanian/08-03.march-2024.md",
+    "uni/Lithuanian/14-03.march-2024.md",
+    "uni/Lithuanian/Dictionary.md",
+    "uni/Presentations/Git presentation.md",
+    "uni/Probability theory/homeworks/Homework1.md",
+    "uni/Probability theory/lectures/Bernoulli.md",
+    "uni/Probability theory/lectures/Conditional probability.md",
+    "uni/Probability theory/lectures/Probability measure.md",
+    "uni/Probability theory/lectures/Random events.md",
+    "uni/Probability theory/final.md",
+    "uni/Index.md",
+    "uni/computer-architecture/attachements/priv_rings.svg",
+    "uni/lithuanian/kalbėjimas.png",
+    "uni/lithuanian/rašymas.png",
+    "uni/lithuanian/uzduotis_2pmk..png",
+    "uni/presentations/attachements/git_icon.svg",
+    "uni/presentations/attachements/pasted-image-20230402184812.png",
+    "uni/presentations/attachements/pasted-image-20230402184729.png",
+    "uni/presentations/attachements/pasted-image-20230402185127.png",
+    "uni/presentations/attachements/pasted-image-20230402185225.png",
+    "uni/presentations/attachements/pasted-image-20230402192409.png",
+    "uni/presentations/attachements/pasted-image-20230402192725.png",
+    "uni/presentations/attachements/pasted-image-20230402192652.png",
+    "uni/presentations/attachements/pasted-image-20230402193057.png",
+    "uni/presentations/attachements/pasted-image-20230402193527.png",
+    "uni/presentations/attachements/pasted-image-20230402201348.png",
+    "uni/presentations/attachements/pasted-image-20230402201627.png",
+    "uni/presentations/attachements/static-assets-upload2926279536208541530.webp",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
+  ],
+  "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
+  ],
+  "fileInfo": {
+    "uni/Computer architecture/Data representation.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 18068,
+      "exportedPath": "uni/computer-architecture/data-representation.html",
+      "dependencies": []
+    },
+    "uni/Computer architecture/IO.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 21067,
+      "exportedPath": "uni/computer-architecture/io.html",
+      "dependencies": []
+    },
+    "uni/Computer architecture/Memory.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 59187,
+      "exportedPath": "uni/computer-architecture/memory.html",
+      "dependencies": []
+    },
+    "uni/Computer architecture/Processor.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 43113,
+      "exportedPath": "uni/computer-architecture/processor.html",
+      "dependencies": [
+        "uni/computer-architecture/attachements/priv_rings.svg"
+      ]
+    },
+    "uni/Discrete math/Graphs/Graphs - basics.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 6471,
+      "exportedPath": "uni/discrete-math/graphs/graphs-basics.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - coloring.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 15338,
+      "exportedPath": "uni/discrete-math/graphs/graphs-coloring.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - connectivity.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 24540,
+      "exportedPath": "uni/discrete-math/graphs/graphs-connectivity.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - directed graphs, applications.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 12026,
+      "exportedPath": "uni/discrete-math/graphs/graphs-directed-graphs,-applications.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - metrics.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 8115,
+      "exportedPath": "uni/discrete-math/graphs/graphs-metrics.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - metrics2.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 7149,
+      "exportedPath": "uni/discrete-math/graphs/graphs-metrics2.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - morphism.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 18263,
+      "exportedPath": "uni/discrete-math/graphs/graphs-morphism.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - operations.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 12919,
+      "exportedPath": "uni/discrete-math/graphs/graphs-operations.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - planarity.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 4531,
+      "exportedPath": "uni/discrete-math/graphs/graphs-planarity.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - shortest path.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 41542,
+      "exportedPath": "uni/discrete-math/graphs/graphs-shortest-path.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Graphs/Graphs - trees.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 30481,
+      "exportedPath": "uni/discrete-math/graphs/graphs-trees.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Number theory/Divisors, multiples, primes.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 10367,
+      "exportedPath": "uni/discrete-math/number-theory/divisors,-multiples,-primes.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Number theory/Huffman codes.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 9701,
+      "exportedPath": "uni/discrete-math/number-theory/huffman-codes.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Number theory/Residue classes, divisibility.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 8500,
+      "exportedPath": "uni/discrete-math/number-theory/residue-classes,-divisibility.html",
+      "dependencies": []
+    },
+    "uni/Discrete math/Number theory/RSA, ECC.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 6328,
+      "exportedPath": "uni/discrete-math/number-theory/rsa,-ecc.html",
+      "dependencies": []
+    },
+    "uni/Presentations/Git presentation.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 13156,
+      "exportedPath": "uni/presentations/git-presentation.html",
+      "dependencies": [
+        "uni/presentations/attachements/git_icon.svg",
+        "uni/presentations/attachements/pasted-image-20230402184812.png",
+        "uni/presentations/attachements/pasted-image-20230402184729.png",
+        "uni/presentations/attachements/pasted-image-20230402185127.png",
+        "uni/presentations/attachements/pasted-image-20230402185225.png",
+        "uni/presentations/attachements/pasted-image-20230402192409.png",
+        "uni/presentations/attachements/pasted-image-20230402192725.png",
+        "uni/presentations/attachements/pasted-image-20230402192652.png",
+        "uni/presentations/attachements/pasted-image-20230402193057.png",
+        "uni/presentations/attachements/pasted-image-20230402193527.png",
+        "uni/presentations/attachements/pasted-image-20230402201348.png",
+        "uni/presentations/attachements/pasted-image-20230402201627.png",
+        "uni/presentations/attachements/static-assets-upload2926279536208541530.webp"
+      ]
+    },
+    "uni/Probability theory/homeworks/Homework1.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 5271,
+      "exportedPath": "uni/probability-theory/homeworks/homework1.html",
+      "dependencies": []
+    },
+    "uni/Probability theory/lectures/Bernoulli.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 1987,
+      "exportedPath": "uni/probability-theory/lectures/bernoulli.html",
+      "dependencies": []
+    },
+    "uni/Probability theory/lectures/Conditional probability.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 1954,
+      "exportedPath": "uni/probability-theory/lectures/conditional-probability.html",
+      "dependencies": []
+    },
+    "uni/Probability theory/lectures/Probability measure.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 4411,
+      "exportedPath": "uni/probability-theory/lectures/probability-measure.html",
+      "dependencies": []
+    },
+    "uni/Probability theory/lectures/Random events.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 5624,
+      "exportedPath": "uni/probability-theory/lectures/random-events.html",
+      "dependencies": []
+    },
+    "uni/Probability theory/final.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 1991,
+      "exportedPath": "uni/probability-theory/final.html",
+      "dependencies": []
+    },
+    "uni/Index.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 526,
+      "exportedPath": "uni/index.html",
+      "dependencies": []
+    },
+    "uni/computer-architecture/attachements/priv_rings.svg": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 3481,
+      "exportedPath": "uni/computer-architecture/attachements/priv_rings.svg",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/git_icon.svg": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 792,
+      "exportedPath": "uni/presentations/attachements/git_icon.svg",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402184812.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 23589,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402184812.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402184729.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 23518,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402184729.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402185127.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 46124,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402185127.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402185225.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 21848,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402185225.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402192409.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 91224,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402192409.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402192725.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 39897,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402192725.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402192652.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 38593,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402192652.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402193057.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 32700,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402193057.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402193527.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 16403,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402193527.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402201348.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 5863,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402201348.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/pasted-image-20230402201627.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 6474,
+      "exportedPath": "uni/presentations/attachements/pasted-image-20230402201627.png",
+      "dependencies": []
+    },
+    "uni/presentations/attachements/static-assets-upload2926279536208541530.webp": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 458336,
+      "exportedPath": "uni/presentations/attachements/static-assets-upload2926279536208541530.webp",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_zero.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 1368,
+      "exportedPath": "lib/fonts/mathjax_zero.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 34160,
+      "exportedPath": "lib/fonts/mathjax_main-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-bold.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 34464,
+      "exportedPath": "lib/fonts/mathjax_main-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-italic.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 19360,
+      "exportedPath": "lib/fonts/mathjax_math-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-italic.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 20832,
+      "exportedPath": "lib/fonts/mathjax_main-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-bolditalic.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 19776,
+      "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size1-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 5792,
+      "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size2-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 5464,
+      "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size3-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 3244,
+      "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size4-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 5148,
+      "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_ams-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 40808,
+      "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 9600,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-bold.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 9908,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 21480,
+      "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-bold.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 22340,
+      "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 12660,
+      "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-bold.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 15944,
+      "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-italic.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 14628,
+      "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_script-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 11852,
+      "exportedPath": "lib/fonts/mathjax_script-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_typewriter-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 17604,
+      "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-regular.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 1136,
+      "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-bold.woff": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 1116,
+      "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 45503,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 2909,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 157292,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/other-plugins.css": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 43094,
+      "exportedPath": "lib/styles/other-plugins.css",
+      "dependencies": []
+    },
+    "lib/styles/theme.css": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 12230,
+      "exportedPath": "lib/styles/theme.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 746,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/supported-plugins.css": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 9217,
+      "exportedPath": "lib/styles/supported-plugins.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/snippets.css": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 4545,
+      "exportedPath": "lib/styles/snippets.css",
+      "dependencies": []
+    },
+    "uni/Lithuanian/08-03.march-2024.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 4963,
+      "exportedPath": "uni/lithuanian/08-03.march-2024.html",
+      "dependencies": [
+        "uni/lithuanian/kalbėjimas.png",
+        "uni/lithuanian/rašymas.png",
+        "uni/lithuanian/uzduotis_2pmk..png"
+      ]
+    },
+    "uni/Lithuanian/14-03.march-2024.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 3912,
+      "exportedPath": "uni/lithuanian/14-03.march-2024.html",
+      "dependencies": []
+    },
+    "uni/Lithuanian/Dictionary.md": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 7336,
+      "exportedPath": "uni/lithuanian/dictionary.html",
+      "dependencies": []
+    },
+    "uni/lithuanian/kalbėjimas.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 169596,
+      "exportedPath": "uni/lithuanian/kalbėjimas.png",
+      "dependencies": []
+    },
+    "uni/lithuanian/rašymas.png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 401916,
+      "exportedPath": "uni/lithuanian/rašymas.png",
+      "dependencies": []
+    },
+    "uni/lithuanian/uzduotis_2pmk..png": {
+      "modifiedTime": 1710517258992,
+      "sourceSize": 272922,
+      "exportedPath": "uni/lithuanian/uzduotis_2pmk..png",
+      "dependencies": []
+    }
+  }
+}
