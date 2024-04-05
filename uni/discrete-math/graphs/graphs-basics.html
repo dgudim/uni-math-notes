@@ -11,85 +11,7 @@
 		<meta property="og:url" content="uni/discrete-math/graphs/graphs-basics.html">
 		<meta property="og:image" content="undefined">
 		<meta property="og:site_name" content="obsidian_vault">
-		<script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title highlightr-rounded"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles">mjx-c.mjx-c1D43C.TEX-I::before { padding: 0.683em 0.504em 0px 0px; content: "I"; }
-mjx-c.mjx-cB1::before { padding: 0.666em 0.778em 0px 0px; content: "±"; }
-mjx-c.mjx-c53::before { padding: 0.705em 0.556em 0.022em 0px; content: "S"; }
-mjx-c.mjx-c221A.TEX-S4::before { padding: 1.75em 1.02em 1.25em 0px; content: "√"; }
-mjx-c.mjx-c2211.TEX-S1::before { padding: 0.75em 1.056em 0.25em 0px; content: "∑"; }
-mjx-c.mjx-c2216::before { padding: 0.75em 0.5em 0.25em 0px; content: "∖"; }
-mjx-c.mjx-c64::before { padding: 0.694em 0.556em 0.011em 0px; content: "d"; }
-mjx-c.mjx-c62::before { padding: 0.694em 0.556em 0.011em 0px; content: "b"; }
-mjx-c.mjx-c1D43B.TEX-I::before { padding: 0.683em 0.888em 0px 0px; content: "H"; }
-mjx-munder { display: inline-block; text-align: left; }
-mjx-over { text-align: left; }
-mjx-munder:not([limits="false"]) { display: inline-table; }
-mjx-munder > mjx-row { text-align: left; }
-mjx-under { padding-bottom: 0.1em; }
-mjx-c.mjx-c77::before { padding: 0.431em 0.722em 0.011em 0px; content: "w"; }
-mjx-c.mjx-c68::before { padding: 0.694em 0.556em 0px 0px; content: "h"; }
-mjx-c.mjx-c67::before { padding: 0.453em 0.5em 0.206em 0px; content: "g"; }
-mjx-c.mjx-c41::before { padding: 0.716em 0.75em 0px 0px; content: "A"; }
-mjx-c.mjx-c2223::before { padding: 0.75em 0.278em 0.249em 0px; content: "∣"; }
-mjx-c.mjx-c3A9::before { padding: 0.704em 0.722em 0px 0px; content: "Ω"; }
-mjx-c.mjx-c28.TEX-S4::before { padding: 1.75em 0.792em 1.249em 0px; content: "("; }
-mjx-c.mjx-c29.TEX-S4::before { padding: 1.75em 0.792em 1.249em 0px; content: ")"; }
-mjx-c.mjx-c66::before { padding: 0.705em 0.372em 0px 0px; content: "f"; }
-mjx-c.mjx-c20::before { padding: 0px 0.25em 0px 0px; content: " "; }
-mjx-c.mjx-c75::before { padding: 0.442em 0.556em 0.011em 0px; content: "u"; }
-mjx-c.mjx-c6D::before { padding: 0.442em 0.833em 0px 0px; content: "m"; }
-mjx-c.mjx-c2019::before { padding: 0.694em 0.278em 0px 0px; content: "’"; }
-mjx-mpadded { display: inline-block; text-align: left; }
-mjx-rbox { display: inline-block; position: relative; }
-.mjx-stretched mjx-c.mjx-c2013::before { content: "–"; }
-mjx-stretchy-h.mjx-c2013 mjx-ext mjx-c::before { content: "–"; padding: 0.285em 0px 0px; }
-mjx-stretchy-h.mjx-c2192 mjx-ext mjx-c::before { content: "−"; padding: 0.583em 0px 0.082em; }
-mjx-stretchy-h.mjx-c2192 mjx-end mjx-c::before { content: "→"; padding: 0.583em 0px 0.082em; }
-mjx-c.mjx-c6F::before { padding: 0.448em 0.5em 0.01em 0px; content: "o"; }
-mjx-c.mjx-c70::before { padding: 0.442em 0.556em 0.194em 0px; content: "p"; }
-mjx-c.mjx-c61::before { padding: 0.448em 0.5em 0.011em 0px; content: "a"; }
-mjx-c.mjx-c79::before { padding: 0.431em 0.528em 0.204em 0px; content: "y"; }
-mjx-c.mjx-c28.TEX-S1::before { padding: 0.85em 0.458em 0.349em 0px; content: "("; }
-mjx-c.mjx-c29.TEX-S1::before { padding: 0.85em 0.458em 0.349em 0px; content: ")"; }
-mjx-c.mjx-c1D448.TEX-I::before { padding: 0.683em 0.767em 0.022em 0px; content: "U"; }
-mjx-c.mjx-cAF::before { padding: 0.59em 0.5em 0px 0px; content: "¯"; }
-mjx-c.mjx-c1D711.TEX-I::before { padding: 0.442em 0.654em 0.218em 0px; content: "φ"; }
-mjx-c.mjx-c2261::before { padding: 0.464em 0.778em 0px 0px; content: "≡"; }
-mjx-c.mjx-c28.TEX-S2::before { padding: 1.15em 0.597em 0.649em 0px; content: "("; }
-mjx-c.mjx-c29.TEX-S2::before { padding: 1.15em 0.597em 0.649em 0px; content: ")"; }
-mjx-c.mjx-c1D45E.TEX-I::before { padding: 0.442em 0.46em 0.194em 0px; content: "q"; }
-mjx-c.mjx-c28.TEX-S3::before { padding: 1.45em 0.736em 0.949em 0px; content: "("; }
-mjx-c.mjx-c29.TEX-S3::before { padding: 1.45em 0.736em 0.949em 0px; content: ")"; }
-mjx-c.mjx-c221A::before { padding: 0.8em 0.853em 0.2em 0px; content: "√"; }
-mjx-c.mjx-c2248::before { padding: 0.483em 0.778em 0px 0px; content: "≈"; }
-mjx-msqrt { display: inline-block; text-align: left; }
-mjx-root { display: inline-block; white-space: nowrap; }
-mjx-surd { display: inline-block; vertical-align: top; }
-mjx-sqrt { display: inline-block; padding-top: 0.07em; }
-mjx-sqrt > mjx-box { border-top: 0.07em solid; }
-mjx-sqrt.mjx-tall > mjx-box { padding-left: 0.3em; margin-left: -0.3em; }
-mjx-c.mjx-c221A.TEX-S1::before { padding: 0.85em 1.02em 0.35em 0px; content: "√"; }
-mjx-c.mjx-c394::before { padding: 0.716em 0.833em 0px 0px; content: "Δ"; }
-mjx-c.mjx-c3E::before { padding: 0.54em 0.778em 0.04em 0px; content: ">"; }
-mjx-c.mjx-c1D439.TEX-I::before { padding: 0.68em 0.749em 0px 0px; content: "F"; }
-mjx-c.mjx-c1D716.TEX-I::before { padding: 0.431em 0.406em 0.011em 0px; content: "ϵ"; }
-mjx-c.mjx-c7B.TEX-S3::before { padding: 1.45em 0.75em 0.949em 0px; content: "{"; }
-mjx-c.mjx-c7D.TEX-S3::before { padding: 1.45em 0.75em 0.949em 0px; content: "}"; }
-mjx-c.mjx-c3A::before { padding: 0.43em 0.278em 0px 0px; content: ":"; }
-mjx-c.mjx-c2245::before { padding: 0.589em 0.778em 0px 0px; content: "≅"; }
-mjx-c.mjx-c2200::before { padding: 0.694em 0.556em 0.022em 0px; content: "∀"; }
-mjx-c.mjx-c27F9::before { padding: 0.525em 1.638em 0.024em 0px; content: "⟹"; }
-mjx-c.mjx-c1D466.TEX-I::before { padding: 0.442em 0.49em 0.205em 0px; content: "y"; }
-mjx-c.mjx-c1D467.TEX-I::before { padding: 0.442em 0.465em 0.011em 0px; content: "z"; }
-mjx-c.mjx-c2264::before { padding: 0.636em 0.778em 0.138em 0px; content: "≤"; }
-mjx-c.mjx-c3C::before { padding: 0.54em 0.778em 0.04em 0px; content: "<"; }
-mjx-c.mjx-c1D443.TEX-I::before { padding: 0.683em 0.751em 0px 0px; content: "P"; }
-mjx-mover { display: inline-block; text-align: left; }
-mjx-mover:not([limits="false"]) { padding-top: 0.1em; }
-mjx-mover:not([limits="false"]) > * { display: block; text-align: left; }
-mjx-c.mjx-c5E::before { padding: 0.694em 0.5em 0px 0px; content: "^"; }
-mjx-c.mjx-c22EF::before { padding: 0.31em 1.172em 0px 0px; content: "⋯"; }
-mjx-mspace { display: inline-block; text-align: left; }
-mjx-stretchy-v.mjx-c28 mjx-beg mjx-c::before { content: "⎛"; padding: 1.154em 0.875em 0.655em 0px; }
+		<script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title highlightr-rounded"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles">mjx-stretchy-v.mjx-c28 mjx-beg mjx-c::before { content: "⎛"; padding: 1.154em 0.875em 0.655em 0px; }
 mjx-stretchy-v.mjx-c28 mjx-ext mjx-c::before { content: "⎜"; width: 0.875em; }
 mjx-stretchy-v.mjx-c28 mjx-end mjx-c::before { content: "⎝"; padding: 1.165em 0.875em 0.644em 0px; }
 mjx-stretchy-v.mjx-c28 > mjx-end { margin-top: -1.809em; }
@@ -99,6 +21,14 @@ mjx-stretchy-v.mjx-c29 mjx-ext mjx-c::before { content: "⎟"; width: 0.875em; }
 mjx-stretchy-v.mjx-c29 mjx-end mjx-c::before { content: "⎠"; padding: 1.165em 0.875em 0.644em 0px; }
 mjx-stretchy-v.mjx-c29 > mjx-end { margin-top: -1.809em; }
 mjx-stretchy-v.mjx-c29 > mjx-ext { border-top-width: 1.779em; border-bottom-width: 1.779em; }
+mjx-c.mjx-c2260::before { padding: 0.716em 0.778em 0.215em 0px; content: "≠"; }
+mjx-c.mjx-c1D706.TEX-I::before { padding: 0.694em 0.583em 0.012em 0px; content: "λ"; }
+mjx-c.mjx-c2F::before { padding: 0.75em 0.5em 0.25em 0px; content: "/"; }
+mjx-c.mjx-c393::before { padding: 0.68em 0.625em 0px 0px; content: "Γ"; }
+mjx-c.mjx-c1D463.TEX-I::before { padding: 0.443em 0.485em 0.011em 0px; content: "v"; }
+mjx-c.mjx-c7C::before { padding: 0.75em 0.278em 0.249em 0px; content: "|"; }
+mjx-c.mjx-c2205::before { padding: 0.772em 0.5em 0.078em 0px; content: "∅"; }
+mjx-mspace { display: inline-block; text-align: left; }
 mjx-c.mjx-c7B::before { padding: 0.75em 0.5em 0.25em 0px; content: "{"; }
 mjx-c.mjx-c7D::before { padding: 0.75em 0.5em 0.25em 0px; content: "}"; }
 mjx-c.mjx-c76::before { padding: 0.431em 0.528em 0.011em 0px; content: "v"; }
@@ -110,30 +40,6 @@ mjx-c.mjx-c63::before { padding: 0.448em 0.444em 0.011em 0px; content: "c"; }
 mjx-c.mjx-c73::before { padding: 0.448em 0.394em 0.011em 0px; content: "s"; }
 mjx-c.mjx-c6C::before { padding: 0.694em 0.278em 0px 0px; content: "l"; }
 mjx-c.mjx-c6E::before { padding: 0.442em 0.556em 0px 0px; content: "n"; }
-mjx-c.mjx-c7C::before { padding: 0.75em 0.278em 0.249em 0px; content: "|"; }
-mjx-c.mjx-c2205::before { padding: 0.772em 0.5em 0.078em 0px; content: "∅"; }
-mjx-c.mjx-c393::before { padding: 0.68em 0.625em 0px 0px; content: "Γ"; }
-mjx-c.mjx-c1D463.TEX-I::before { padding: 0.443em 0.485em 0.011em 0px; content: "v"; }
-mjx-c.mjx-c2260::before { padding: 0.716em 0.778em 0.215em 0px; content: "≠"; }
-mjx-c.mjx-c1D706.TEX-I::before { padding: 0.694em 0.583em 0.012em 0px; content: "λ"; }
-mjx-c.mjx-c2F::before { padding: 0.75em 0.5em 0.25em 0px; content: "/"; }
-mjx-c.mjx-c2265::before { padding: 0.636em 0.778em 0.138em 0px; content: "≥"; }
-mjx-c.mjx-c2208::before { padding: 0.54em 0.667em 0.04em 0px; content: "∈"; }
-mjx-c.mjx-c1D453.TEX-I::before { padding: 0.705em 0.55em 0.205em 0px; content: "f"; }
-mjx-c.mjx-c1D70C.TEX-I::before { padding: 0.442em 0.517em 0.216em 0px; content: "ρ"; }
-mjx-c.mjx-c2282::before { padding: 0.54em 0.778em 0.04em 0px; content: "⊂"; }
-mjx-c.mjx-c1D6FC.TEX-I::before { padding: 0.442em 0.64em 0.011em 0px; content: "α"; }
-mjx-c.mjx-c3B::before { padding: 0.43em 0.278em 0.194em 0px; content: ";"; }
-mjx-c.mjx-c223C::before { padding: 0.367em 0.778em 0px 0px; content: "∼"; }
-mjx-c.mjx-c21::before { padding: 0.716em 0.278em 0px 0px; content: "!"; }
-mjx-c.mjx-c2032::before { padding: 0.56em 0.275em 0px 0px; content: "′"; }
-mjx-c.mjx-c2229::before { padding: 0.598em 0.667em 0.022em 0px; content: "∩"; }
-mjx-c.mjx-c26::before { padding: 0.716em 0.778em 0.022em 0px; content: "&"; }
-mjx-c.mjx-c222A::before { padding: 0.598em 0.667em 0.022em 0px; content: "∪"; }
-mjx-c.mjx-c2228::before { padding: 0.598em 0.667em 0.022em 0px; content: "∨"; }
-mjx-c.mjx-c2295::before { padding: 0.583em 0.778em 0.083em 0px; content: "⊕"; }
-mjx-c.mjx-cAC::before { padding: 0.356em 0.667em 0px 0px; content: "¬"; }
-mjx-c.mjx-c5C::before { padding: 0.75em 0.5em 0.25em 0px; content: "\\"; }
 mjx-c.mjx-c1D44B.TEX-I::before { padding: 0.683em 0.852em 0px 0px; content: "X"; }
 mjx-c.mjx-c1D44C.TEX-I::before { padding: 0.683em 0.763em 0px 0px; content: "Y"; }
 mjx-c.mjx-c1D445.TEX-I::before { padding: 0.683em 0.759em 0.021em 0px; content: "R"; }
@@ -161,6 +67,14 @@ mjx-c.mjx-c1D44F.TEX-I::before { padding: 0.694em 0.429em 0.011em 0px; content: 
 mjx-c.mjx-c1D452.TEX-I::before { padding: 0.442em 0.466em 0.011em 0px; content: "e"; }
 mjx-c.mjx-c2192::before { padding: 0.511em 1em 0.011em 0px; content: "→"; }
 mjx-c.mjx-c221E::before { padding: 0.442em 1em 0.011em 0px; content: "∞"; }
+mjx-c.mjx-c2E::before { padding: 0.12em 0.278em 0px 0px; content: "."; }
+mjx-msub { display: inline-block; text-align: left; }
+mjx-munderover { display: inline-block; text-align: left; }
+mjx-munderover:not([limits="false"]) { padding-top: 0.1em; }
+mjx-munderover:not([limits="false"]) > * { display: block; }
+mjx-msubsup { display: inline-block; text-align: left; }
+mjx-script { display: inline-block; padding-right: 0.05em; padding-left: 0.033em; }
+mjx-script > mjx-spacer { display: block; }
 mjx-mtable { display: inline-block; text-align: center; vertical-align: 0.25em; position: relative; box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; }
 mjx-mstyle[size="s"] mjx-mtable { vertical-align: 0.354em; }
 mjx-labels { position: absolute; left: 0px; top: 0px; }
@@ -197,7 +111,14 @@ mjx-mtd[rowalign="center"] { vertical-align: middle; }
 mjx-mtd[rowalign="bottom"] { vertical-align: bottom; }
 mjx-mtd[rowalign="baseline"] { vertical-align: baseline; }
 mjx-mtd[rowalign="axis"] { vertical-align: 0.25em; }
-mjx-c.mjx-c2E::before { padding: 0.12em 0.278em 0px 0px; content: "."; }
+mjx-c.mjx-c1D458.TEX-I::before { padding: 0.694em 0.521em 0.011em 0px; content: "k"; }
+mjx-c.mjx-c35::before { padding: 0.666em 0.5em 0.022em 0px; content: "5"; }
+mjx-c.mjx-c2212::before { padding: 0.583em 0.778em 0.082em 0px; content: "−"; }
+mjx-c.mjx-c38::before { padding: 0.666em 0.5em 0.022em 0px; content: "8"; }
+mjx-c.mjx-c1D465.TEX-I::before { padding: 0.442em 0.572em 0.011em 0px; content: "x"; }
+mjx-c.mjx-c2026::before { padding: 0.12em 1.172em 0px 0px; content: "…"; }
+mjx-c.mjx-c2211.TEX-S2::before { padding: 0.95em 1.444em 0.45em 0px; content: "∑"; }
+mjx-c.mjx-c1D45D.TEX-I::before { padding: 0.442em 0.503em 0.194em 0px; content: "p"; }
 mjx-container[jax="CHTML"] { line-height: 0; }
 mjx-container [space="1"] { margin-left: 0.111em; }
 mjx-container [space="2"] { margin-left: 0.167em; }
@@ -240,6 +161,7 @@ mjx-msup { display: inline-block; text-align: left; }
 mjx-mn { display: inline-block; text-align: left; }
 mjx-c { display: inline-block; }
 mjx-utext { display: inline-block; padding: 0.75em 0px 0.2em; }
+mjx-texatom { display: inline-block; text-align: left; }
 mjx-mi { display: inline-block; text-align: left; }
 mjx-mo { display: inline-block; text-align: left; }
 mjx-stretchy-h { display: inline-table; width: 100%; }
@@ -260,8 +182,6 @@ mjx-stretchy-v > mjx-ext { display: block; height: 100%; box-sizing: border-box;
 mjx-stretchy-v > mjx-ext > mjx-c::before { width: initial; box-sizing: border-box; }
 mjx-stretchy-v > mjx-ext > mjx-c { transform: scaleY(500) translateY(0.075em); overflow: visible; }
 mjx-mark { display: inline-block; height: 0px; }
-mjx-msub { display: inline-block; text-align: left; }
-mjx-texatom { display: inline-block; text-align: left; }
 mjx-mfrac { display: inline-block; text-align: left; }
 mjx-frac { display: inline-block; vertical-align: 0.17em; padding: 0px 0.22em; }
 mjx-frac[type="d"] { vertical-align: 0.04em; }
@@ -283,12 +203,6 @@ mjx-dstrut { display: inline-block; height: 0.505em; width: 0px; }
 mjx-dstrut[type="d"] { height: 0.726em; }
 mjx-line { display: block; box-sizing: border-box; min-height: 1px; height: 0.06em; border-top: 0.06em solid; margin: 0.06em -0.1em; overflow: hidden; }
 mjx-line[type="d"] { margin: 0.18em -0.1em; }
-mjx-munderover { display: inline-block; text-align: left; }
-mjx-munderover:not([limits="false"]) { padding-top: 0.1em; }
-mjx-munderover:not([limits="false"]) > * { display: block; }
-mjx-msubsup { display: inline-block; text-align: left; }
-mjx-script { display: inline-block; padding-right: 0.05em; padding-left: 0.033em; }
-mjx-script > mjx-spacer { display: block; }
 mjx-c::before { display: block; width: 0px; }
 .MJX-TEX { font-family: MJXZERO, MJXTEX; }
 .TEX-B { font-family: MJXZERO, MJXTEX-B; }
@@ -335,21 +249,13 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c { font-family: MJXZERO, MJXTEX-S1, MJ
 @font-face { font-family: MJXTEX-V; src: url("lib/fonts/mathjax_vector-regular.woff") format("woff"); }
 @font-face { font-family: MJXTEX-VB; src: url("lib/fonts/mathjax_vector-bold.woff") format("woff"); }
 mjx-c.mjx-c32::before { padding: 0.666em 0.5em 0px 0px; content: "2"; }
-mjx-c.mjx-c1D458.TEX-I::before { padding: 0.694em 0.521em 0.011em 0px; content: "k"; }
-mjx-c.mjx-c35::before { padding: 0.666em 0.5em 0.022em 0px; content: "5"; }
-mjx-c.mjx-c34::before { padding: 0.677em 0.5em 0px 0px; content: "4"; }
-mjx-c.mjx-c33::before { padding: 0.665em 0.5em 0.022em 0px; content: "3"; }
 mjx-c.mjx-c31::before { padding: 0.666em 0.5em 0px 0px; content: "1"; }
 mjx-c.mjx-c30::before { padding: 0.666em 0.5em 0.022em 0px; content: "0"; }
-mjx-c.mjx-c2217::before { padding: 0.465em 0.5em 0px 0px; content: "∗"; }
-mjx-c.mjx-c2B::before { padding: 0.583em 0.778em 0.082em 0px; content: "+"; }
-mjx-c.mjx-c3D::before { padding: 0.583em 0.778em 0.082em 0px; content: "="; }
-mjx-c.mjx-c2212::before { padding: 0.583em 0.778em 0.082em 0px; content: "−"; }
-mjx-c.mjx-c38::before { padding: 0.666em 0.5em 0.022em 0px; content: "8"; }
-mjx-c.mjx-c1D434.TEX-I::before { padding: 0.716em 0.75em 0px 0px; content: "A"; }
-mjx-c.mjx-c36::before { padding: 0.666em 0.5em 0.022em 0px; content: "6"; }
+mjx-c.mjx-c33::before { padding: 0.665em 0.5em 0.022em 0px; content: "3"; }
+mjx-c.mjx-c34::before { padding: 0.677em 0.5em 0px 0px; content: "4"; }
 mjx-c.mjx-c39::before { padding: 0.666em 0.5em 0.022em 0px; content: "9"; }
 mjx-c.mjx-c1D44A.TEX-I::before { padding: 0.683em 1.048em 0.022em 0px; content: "W"; }
+mjx-c.mjx-c3D::before { padding: 0.583em 0.778em 0.082em 0px; content: "="; }
 mjx-c.mjx-c1D435.TEX-I::before { padding: 0.683em 0.759em 0px 0px; content: "B"; }
 mjx-c.mjx-c1D441.TEX-I::before { padding: 0.683em 0.888em 0px 0px; content: "N"; }
 mjx-c.mjx-c1D442.TEX-I::before { padding: 0.704em 0.763em 0.022em 0px; content: "O"; }
@@ -358,6 +264,7 @@ mjx-c.mjx-c1D45A.TEX-I::before { padding: 0.442em 0.878em 0.011em 0px; content: 
 mjx-c.mjx-c1D45C.TEX-I::before { padding: 0.441em 0.485em 0.011em 0px; content: "o"; }
 mjx-c.mjx-c1D451.TEX-I::before { padding: 0.694em 0.52em 0.01em 0px; content: "d"; }
 mjx-c.mjx-c2C::before { padding: 0.121em 0.278em 0.194em 0px; content: ","; }
+mjx-c.mjx-c36::before { padding: 0.666em 0.5em 0.022em 0px; content: "6"; }
 mjx-c.mjx-c37::before { padding: 0.676em 0.5em 0.022em 0px; content: "7"; }
 mjx-c.mjx-c1D459.TEX-I::before { padding: 0.694em 0.298em 0.011em 0px; content: "l"; }
 mjx-c.mjx-c1D450.TEX-I::before { padding: 0.442em 0.433em 0.011em 0px; content: "c"; }
@@ -366,263 +273,267 @@ mjx-c.mjx-c1D461.TEX-I::before { padding: 0.626em 0.361em 0.011em 0px; content: 
 mjx-c.mjx-c1D456.TEX-I::before { padding: 0.661em 0.345em 0.011em 0px; content: "i"; }
 mjx-c.mjx-c1D45B.TEX-I::before { padding: 0.442em 0.6em 0.011em 0px; content: "n"; }
 mjx-c.mjx-c28::before { padding: 0.75em 0.389em 0.25em 0px; content: "("; }
+mjx-c.mjx-c1D434.TEX-I::before { padding: 0.716em 0.75em 0px 0px; content: "A"; }
 mjx-c.mjx-c29::before { padding: 0.75em 0.389em 0.25em 0px; content: ")"; }
+mjx-c.mjx-c2B::before { padding: 0.583em 0.778em 0.082em 0px; content: "+"; }
+mjx-c.mjx-c2217::before { padding: 0.465em 0.5em 0px 0px; content: "∗"; }
 mjx-c.mjx-c1D444.TEX-I::before { padding: 0.704em 0.791em 0.194em 0px; content: "Q"; }
 mjx-c.mjx-c1D457.TEX-I::before { padding: 0.661em 0.412em 0.204em 0px; content: "j"; }
-mjx-c.mjx-c1D465.TEX-I::before { padding: 0.442em 0.572em 0.011em 0px; content: "x"; }
-mjx-c.mjx-c2026::before { padding: 0.12em 1.172em 0px 0px; content: "…"; }
-mjx-c.mjx-c2211.TEX-S2::before { padding: 0.95em 1.444em 0.45em 0px; content: "∑"; }
-mjx-c.mjx-c1D45D.TEX-I::before { padding: 0.442em 0.503em 0.194em 0px; content: "p"; }
 </style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="Directed graphs"><p>Directed graphs</p></h1><div><blockquote>
 <p>Multi-graph is a collection of points<br>
 and line segments that connect these points</p>
-</blockquote></div><div class="heading-wrapper"><div class="heading-children"><div><div class="block-language-dot multi-graph"><!-- Generated by graphviz version 10.0.1 (0)
- --><!-- Title: neato Pages: 1 --><svg width="369pt" height="358pt" viewBox="0.00 0.00 368.79 357.68" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 353.68)" style="">
+</blockquote></div><div class="heading-wrapper"><div class="heading-children"><div><div class="block-language-dot multi-graph"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 10.0.1 (0)
+ -->
+<!-- Title: neato Pages: 1 -->
+<svg width="369pt" height="358pt" viewBox="0.00 0.00 368.79 357.68" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 353.68)">
 <title>neato</title>
 <!-- a -->
-<g id="node1" class="node" style="">
+<g id="node1" class="node">
 <title>a</title>
-<ellipse cx="176.38" cy="-190.79" rx="10.8" ry="10.8" style="fill:var(--g-red);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="red" stroke="lightgray" cx="176.38" cy="-190.79" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- b -->
-<g id="node2" class="node" style="">
+<g id="node2" class="node">
 <title>b</title>
-<ellipse cx="165.74" cy="-93.96" rx="10.8" ry="10.8" style="fill:var(--g-light-green);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="lightgreen" stroke="lightgray" cx="165.74" cy="-93.96" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- a&#45;&gt;b -->
-<g id="edge1" class="edge" style="">
+<g id="edge1" class="edge">
 <title>a-&gt;b</title>
-<path d="M175.16,-179.68C173.47,-164.29 170.37,-136.12 168.19,-116.29" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="171.68,-116 167.11,-106.44 164.72,-116.76 171.68,-116" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M175.16,-179.68C173.47,-164.29 170.37,-136.12 168.19,-116.29"></path>
+<polygon fill="lightgray" stroke="lightgray" points="171.68,-116 167.11,-106.44 164.72,-116.76 171.68,-116"></polygon>
 </g>
 <!-- c -->
-<g id="node3" class="node" style="">
+<g id="node3" class="node">
 <title>c</title>
-<ellipse cx="266.36" cy="-229.95" rx="10.8" ry="10.8" style="fill:var(--g-light-green);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="lightgreen" stroke="lightgray" cx="266.36" cy="-229.95" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- a&#45;&gt;c -->
-<g id="edge2" class="edge" style="">
+<g id="edge2" class="edge">
 <title>a-&gt;c</title>
-<path d="M186.7,-195.28C201.01,-201.51 227.18,-212.9 245.61,-220.92" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="244.2,-224.12 254.77,-224.9 247,-217.7 244.2,-224.12" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M186.7,-195.28C201.01,-201.51 227.18,-212.9 245.61,-220.92"></path>
+<polygon fill="lightgray" stroke="lightgray" points="244.2,-224.12 254.77,-224.9 247,-217.7 244.2,-224.12"></polygon>
 </g>
 <!-- d -->
-<g id="node4" class="node" style="">
+<g id="node4" class="node">
 <title>d</title>
-<ellipse cx="96.94" cy="-248.08" rx="10.8" ry="10.8" style="fill:var(--g-light-green);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="lightgreen" stroke="lightgray" cx="96.94" cy="-248.08" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- a&#45;&gt;d -->
-<g id="edge3" class="edge" style="">
+<g id="edge3" class="edge">
 <title>a-&gt;d</title>
-<path d="M167.27,-197.36C154.58,-206.51 131.31,-223.29 115.03,-235.04" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="113.24,-232.01 107.17,-240.7 117.33,-237.69 113.24,-232.01" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M167.27,-197.36C154.58,-206.51 131.31,-223.29 115.03,-235.04"></path>
+<polygon fill="lightgray" stroke="lightgray" points="113.24,-232.01 107.17,-240.7 117.33,-237.69 113.24,-232.01"></polygon>
 </g>
 <!-- e -->
-<g id="node5" class="node" style="">
+<g id="node5" class="node">
 <title>e</title>
-<ellipse cx="238.09" cy="-75.29" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="238.09" cy="-75.29" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- b&#45;&gt;e -->
-<g id="edge4" class="edge" style="">
+<g id="edge4" class="edge">
 <title>b-&gt;e</title>
-<path d="M176.41,-91.2C186.89,-88.5 203.16,-84.3 216.37,-80.9" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="217.1,-84.32 225.91,-78.43 215.35,-77.54 217.1,-84.32" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M176.41,-91.2C186.89,-88.5 203.16,-84.3 216.37,-80.9"></path>
+<polygon fill="lightgray" stroke="lightgray" points="217.1,-84.32 225.91,-78.43 215.35,-77.54 217.1,-84.32"></polygon>
 </g>
 <!-- f -->
-<g id="node6" class="node" style="">
+<g id="node6" class="node">
 <title>f</title>
-<ellipse cx="89.8" cy="-89.66" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="89.8" cy="-89.66" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- b&#45;&gt;f -->
-<g id="edge5" class="edge" style="">
+<g id="edge5" class="edge">
 <title>b-&gt;f</title>
-<path d="M154.53,-93.32C143.43,-92.69 126.11,-91.71 112.18,-90.92" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="112.74,-87.45 102.56,-90.38 112.35,-94.44 112.74,-87.45" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M154.53,-93.32C143.43,-92.69 126.11,-91.71 112.18,-90.92"></path>
+<polygon fill="lightgray" stroke="lightgray" points="112.74,-87.45 102.56,-90.38 112.35,-94.44 112.74,-87.45"></polygon>
 </g>
 <!-- g -->
-<g id="node7" class="node" style="">
+<g id="node7" class="node">
 <title>g</title>
-<ellipse cx="92.7" cy="-43.65" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="92.7" cy="-43.65" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- b&#45;&gt;g -->
-<g id="edge6" class="edge" style="">
+<g id="edge6" class="edge">
 <title>b-&gt;g</title>
-<path d="M156.49,-87.59C145.12,-79.76 125.56,-66.29 111.1,-56.32" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="113.12,-53.47 102.89,-50.68 109.14,-59.23 113.12,-53.47" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M156.49,-87.59C145.12,-79.76 125.56,-66.29 111.1,-56.32"></path>
+<polygon fill="lightgray" stroke="lightgray" points="113.12,-53.47 102.89,-50.68 109.14,-59.23 113.12,-53.47"></polygon>
 </g>
 <!-- h -->
-<g id="node8" class="node" style="">
+<g id="node8" class="node">
 <title>h</title>
-<ellipse cx="228.77" cy="-30.27" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="228.77" cy="-30.27" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- b&#45;&gt;h -->
-<g id="edge7" class="edge" style="">
+<g id="edge7" class="edge">
 <title>b-&gt;h</title>
-<path d="M173.47,-86.15C183.29,-76.22 200.5,-58.83 213.12,-46.08" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="215.36,-48.79 219.91,-39.22 210.39,-43.87 215.36,-48.79" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M173.47,-86.15C183.29,-76.22 200.5,-58.83 213.12,-46.08"></path>
+<polygon fill="lightgray" stroke="lightgray" points="215.36,-48.79 219.91,-39.22 210.39,-43.87 215.36,-48.79"></polygon>
 </g>
 <!-- i -->
-<g id="node9" class="node" style="">
+<g id="node9" class="node">
 <title>i</title>
-<ellipse cx="133.54" cy="-15.59" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="133.54" cy="-15.59" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- b&#45;&gt;i -->
-<g id="edge8" class="edge" style="">
+<g id="edge8" class="edge">
 <title>b-&gt;i</title>
-<path d="M161.53,-83.71C156.58,-71.68 148.26,-51.42 141.97,-36.11" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="145.26,-34.91 138.22,-26.99 138.78,-37.57 145.26,-34.91" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M161.53,-83.71C156.58,-71.68 148.26,-51.42 141.97,-36.11"></path>
+<polygon fill="lightgray" stroke="lightgray" points="145.26,-34.91 138.22,-26.99 138.78,-37.57 145.26,-34.91"></polygon>
 </g>
 <!-- j -->
-<g id="node10" class="node" style="">
+<g id="node10" class="node">
 <title>j</title>
-<ellipse cx="182.92" cy="-10.8" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="182.92" cy="-10.8" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- b&#45;&gt;j -->
-<g id="edge9" class="edge" style="">
+<g id="edge9" class="edge">
 <title>b-&gt;j</title>
-<path d="M167.98,-83.09C170.61,-70.39 175.02,-49.05 178.37,-32.84" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="181.77,-33.66 180.37,-23.16 174.92,-32.24 181.77,-33.66" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M167.98,-83.09C170.61,-70.39 175.02,-49.05 178.37,-32.84"></path>
+<polygon fill="lightgray" stroke="lightgray" points="181.77,-33.66 180.37,-23.16 174.92,-32.24 181.77,-33.66"></polygon>
 </g>
 <!-- k -->
-<g id="node11" class="node" style="">
+<g id="node11" class="node">
 <title>k</title>
-<ellipse cx="309.55" cy="-166.5" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="309.55" cy="-166.5" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- c&#45;&gt;k -->
-<g id="edge10" class="edge" style="">
+<g id="edge10" class="edge">
 <title>c-&gt;k</title>
-<path d="M272.55,-220.86C278.9,-211.53 288.96,-196.75 296.99,-184.96" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="299.79,-187.06 302.52,-176.82 294,-183.12 299.79,-187.06" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M272.55,-220.86C278.9,-211.53 288.96,-196.75 296.99,-184.96"></path>
+<polygon fill="lightgray" stroke="lightgray" points="299.79,-187.06 302.52,-176.82 294,-183.12 299.79,-187.06"></polygon>
 </g>
 <!-- l -->
-<g id="node12" class="node" style="">
+<g id="node12" class="node">
 <title>l</title>
-<ellipse cx="245.84" cy="-300.12" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="245.84" cy="-300.12" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- c&#45;&gt;l -->
-<g id="edge11" class="edge" style="">
+<g id="edge11" class="edge">
 <title>c-&gt;l</title>
-<path d="M263.24,-240.6C260.32,-250.6 255.86,-265.85 252.19,-278.4" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="248.86,-277.33 249.41,-287.91 255.58,-279.29 248.86,-277.33" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M263.24,-240.6C260.32,-250.6 255.86,-265.85 252.19,-278.4"></path>
+<polygon fill="lightgray" stroke="lightgray" points="248.86,-277.33 249.41,-287.91 255.58,-279.29 248.86,-277.33"></polygon>
 </g>
 <!-- m -->
-<g id="node13" class="node" style="">
+<g id="node13" class="node">
 <title>m</title>
-<ellipse cx="349.99" cy="-243.31" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="349.99" cy="-243.31" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- c&#45;&gt;m -->
-<g id="edge12" class="edge" style="">
+<g id="edge12" class="edge">
 <title>c-&gt;m</title>
-<path d="M277.29,-231.69C290.06,-233.73 311.52,-237.16 327.82,-239.76" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="327.13,-243.2 337.56,-241.32 328.24,-236.29 327.13,-243.2" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M277.29,-231.69C290.06,-233.73 311.52,-237.16 327.82,-239.76"></path>
+<polygon fill="lightgray" stroke="lightgray" points="327.13,-243.2 337.56,-241.32 328.24,-236.29 327.13,-243.2"></polygon>
 </g>
 <!-- n -->
-<g id="node14" class="node" style="">
+<g id="node14" class="node">
 <title>n</title>
-<ellipse cx="328.7" cy="-288.23" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="328.7" cy="-288.23" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- c&#45;&gt;n -->
-<g id="edge13" class="edge" style="">
+<g id="edge13" class="edge">
 <title>c-&gt;n</title>
-<path d="M274.51,-237.57C284.08,-246.52 300.2,-261.58 312.37,-272.97" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="309.94,-275.48 319.63,-279.76 314.72,-270.37 309.94,-275.48" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M274.51,-237.57C284.08,-246.52 300.2,-261.58 312.37,-272.97"></path>
+<polygon fill="lightgray" stroke="lightgray" points="309.94,-275.48 319.63,-279.76 314.72,-270.37 309.94,-275.48"></polygon>
 </g>
 <!-- o -->
-<g id="node15" class="node" style="">
+<g id="node15" class="node">
 <title>o</title>
-<ellipse cx="288.05" cy="-317.91" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="288.05" cy="-317.91" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- c&#45;&gt;o -->
-<g id="edge14" class="edge" style="">
+<g id="edge14" class="edge">
 <title>c-&gt;o</title>
-<path d="M269.02,-240.73C272.4,-254.45 278.32,-278.47 282.66,-296.08" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="279.21,-296.7 285.01,-305.57 286.01,-295.02 279.21,-296.7" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M269.02,-240.73C272.4,-254.45 278.32,-278.47 282.66,-296.08"></path>
+<polygon fill="lightgray" stroke="lightgray" points="279.21,-296.7 285.01,-305.57 286.01,-295.02 279.21,-296.7"></polygon>
 </g>
 <!-- p -->
-<g id="node16" class="node" style="">
+<g id="node16" class="node">
 <title>p</title>
-<ellipse cx="346.82" cy="-193.85" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="346.82" cy="-193.85" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- c&#45;&gt;p -->
-<g id="edge15" class="edge" style="">
+<g id="edge15" class="edge">
 <title>c-&gt;p</title>
-<path d="M276.55,-225.37C289,-219.79 310.38,-210.2 326.3,-203.06" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="327.64,-206.29 335.33,-199 324.77,-199.9 327.64,-206.29" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M276.55,-225.37C289,-219.79 310.38,-210.2 326.3,-203.06"></path>
+<polygon fill="lightgray" stroke="lightgray" points="327.64,-206.29 335.33,-199 324.77,-199.9 327.64,-206.29"></polygon>
 </g>
 <!-- q -->
-<g id="node17" class="node" style="">
+<g id="node17" class="node">
 <title>q</title>
-<ellipse cx="132.07" cy="-311.82" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="132.07" cy="-311.82" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- d&#45;&gt;q -->
-<g id="edge16" class="edge" style="">
+<g id="edge16" class="edge">
 <title>d-&gt;q</title>
-<path d="M102.27,-257.76C107.28,-266.84 114.91,-280.69 121.2,-292.1" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="118.06,-293.65 125.95,-300.72 124.19,-290.28 118.06,-293.65" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M102.27,-257.76C107.28,-266.84 114.91,-280.69 121.2,-292.1"></path>
+<polygon fill="lightgray" stroke="lightgray" points="118.06,-293.65 125.95,-300.72 124.19,-290.28 118.06,-293.65"></polygon>
 </g>
 <!-- r -->
-<g id="node18" class="node" style="">
+<g id="node18" class="node">
 <title>r</title>
-<ellipse cx="48.97" cy="-318.71" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="48.97" cy="-318.71" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- d&#45;&gt;r -->
-<g id="edge17" class="edge" style="">
+<g id="edge17" class="edge">
 <title>d-&gt;r</title>
-<path d="M90.67,-257.31C83.3,-268.16 70.9,-286.42 61.53,-300.22" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="58.67,-298.21 55.94,-308.45 64.46,-302.14 58.67,-298.21" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M90.67,-257.31C83.3,-268.16 70.9,-286.42 61.53,-300.22"></path>
+<polygon fill="lightgray" stroke="lightgray" points="58.67,-298.21 55.94,-308.45 64.46,-302.14 58.67,-298.21"></polygon>
 </g>
 <!-- s -->
-<g id="node19" class="node" style="">
+<g id="node19" class="node">
 <title>s</title>
-<ellipse cx="10.8" cy="-230.61" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="10.8" cy="-230.61" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- d&#45;&gt;s -->
-<g id="edge18" class="edge" style="">
+<g id="edge18" class="edge">
 <title>d-&gt;s</title>
-<path d="M86.03,-245.87C72.7,-243.16 49.81,-238.52 32.77,-235.07" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="33.6,-231.66 23.1,-233.1 32.21,-238.52 33.6,-231.66" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M86.03,-245.87C72.7,-243.16 49.81,-238.52 32.77,-235.07"></path>
+<polygon fill="lightgray" stroke="lightgray" points="33.6,-231.66 23.1,-233.1 32.21,-238.52 33.6,-231.66"></polygon>
 </g>
 <!-- t -->
-<g id="node20" class="node" style="">
+<g id="node20" class="node">
 <title>t</title>
-<ellipse cx="18.36" cy="-279.53" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="18.36" cy="-279.53" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- d&#45;&gt;t -->
-<g id="edge19" class="edge" style="">
+<g id="edge19" class="edge">
 <title>d-&gt;t</title>
-<path d="M86.66,-252.19C74.6,-257.02 54.28,-265.15 38.93,-271.29" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="37.77,-267.99 29.79,-274.95 40.38,-274.49 37.77,-267.99" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M86.66,-252.19C74.6,-257.02 54.28,-265.15 38.93,-271.29"></path>
+<polygon fill="lightgray" stroke="lightgray" points="37.77,-267.99 29.79,-274.95 40.38,-274.49 37.77,-267.99"></polygon>
 </g>
 <!-- u -->
-<g id="node21" class="node" style="">
+<g id="node21" class="node">
 <title>u</title>
-<ellipse cx="95.18" cy="-338.88" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="95.18" cy="-338.88" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- d&#45;&gt;u -->
-<g id="edge20" class="edge" style="">
+<g id="edge20" class="edge">
 <title>d-&gt;u</title>
-<path d="M96.72,-259.22C96.45,-273.37 95.97,-298.17 95.62,-316.34" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="92.12,-316.08 95.43,-326.14 99.12,-316.21 92.12,-316.08" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M96.72,-259.22C96.45,-273.37 95.97,-298.17 95.62,-316.34"></path>
+<polygon fill="lightgray" stroke="lightgray" points="92.12,-316.08 95.43,-326.14 99.12,-316.21 92.12,-316.08"></polygon>
 </g>
 <!-- v -->
-<g id="node22" class="node" style="">
+<g id="node22" class="node">
 <title>v</title>
-<ellipse cx="40.74" cy="-195.32" rx="10.8" ry="10.8" style="fill:var(--g-light-orange);stroke:var(--g-light70);"></ellipse>
+<ellipse fill="orange" stroke="lightgray" cx="40.74" cy="-195.32" rx="10.8" ry="10.8"></ellipse>
 </g>
 <!-- d&#45;&gt;v -->
-<g id="edge21" class="edge" style="">
+<g id="edge21" class="edge">
 <title>d-&gt;v</title>
-<path d="M89.12,-240.75C80.91,-233.04 67.75,-220.68 57.23,-210.8" style="fill:none;stroke:var(--g-light70);"></path>
-<polygon points="59.64,-208.27 49.95,-203.97 54.85,-213.37 59.64,-208.27" style="fill:var(--g-light70);stroke:var(--g-light70);"></polygon>
+<path fill="none" stroke="lightgray" d="M89.12,-240.75C80.91,-233.04 67.75,-220.68 57.23,-210.8"></path>
+<polygon fill="lightgray" stroke="lightgray" points="59.64,-208.27 49.95,-203.97 54.85,-213.37 59.64,-208.27"></polygon>
 </g>
 </g>
-</svg></div></div><div><div class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="3"><mjx-c class="mjx-c76"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c72"></mjx-c><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c63"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c73"></mjx-c></mjx-mtext><mjx-mspace></mjx-mspace></mjx-math></mjx-container></div></div><div><div class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="3"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c6E"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c73"></mjx-c></mjx-mtext></mjx-math></mjx-container></div></div><div><blockquote>
+</svg>
+</div></div><div><div class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.186em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="3"><mjx-c class="mjx-c76"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c72"></mjx-c><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c63"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c73"></mjx-c></mjx-mtext><mjx-mspace></mjx-mspace></mjx-math></mjx-container></div></div><div><div class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="3"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c6E"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c73"></mjx-c></mjx-mtext></mjx-math></mjx-container></div></div><div><blockquote>
 <p>Two lines are <strong>parallel</strong>, if their initial and final vertices coincide</p>
 </blockquote></div><div><blockquote>
 <p>Line, whose initial and final vertices coincide, is called a <strong>loop</strong></p>
 </blockquote></div><div><blockquote>
-<p>A multi-graph that contains no parallel lines is called a <a data-tooltip-position="top" aria-label="Graphs - directed graphs, applications" data-href="Graphs - directed graphs, applications" href="uni/discrete-math/graphs/graphs-directed-graphs,-applications.html" class="internal-link" target="_self" rel="noopener">directed graph</a> or <strong>digraph</strong>. </p>
+<p>A multi-graph that contains no parallel lines is called a <a data-tooltip-position="top" aria-label="Graphs - directed graphs, applications" data-href="Graphs - directed graphs, applications" href="uni/discrete-math/graphs/graphs-directed-graphs,-applications.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>directed graph</a> or <strong>digraph</strong>. </p>
 </blockquote></div><div><blockquote>
 <p><strong>Digraph</strong> without loops is a <strong>simple digraph</strong>.</p>
 </blockquote></div><div><hr></div><div><br></div></div></div><div class="heading-wrapper"><h1 data-heading="Undirected graph" class="heading" id="Undirected_graph">Undirected graph</h1><div class="heading-children"><div><div class="block-language-col"><div class="columnParent"><div class="columnChild" style="flex-grow: 1; flex-basis: 100px; width: 100px;"><div class="block-language-col-md" style="margin-top: 0px; margin-bottom: 0px;"><div style="flex-grow: 1; flex-basis: 100px; margin-top: 0px; margin-bottom: 0px;"><div class="block-language-dot multi-graph" style="margin-top: 0px; margin-bottom: 0px;"><!-- Generated by graphviz version 10.0.1 (0)
@@ -1000,7 +911,7 @@ For example: <span class="math math-inline is-loaded"><mjx-container class="Math
 </ul></div><div><p>Number of edges: </p></div><div><ol>
 <li data-line="0"><span class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D435 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c33"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c33"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c36"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c36"></mjx-c></mjx-mn></mjx-math></mjx-container></span></li>
 <li data-line="1">We can take <a data-href="#Adjacency matrix" href="#Adjacency_matrix" class="internal-link" target="_self" rel="noopener">Adjacency matrix</a> or <a data-href="#Incidence matrix" href="#Incidence_matrix" class="internal-link" target="_self" rel="noopener">Incidence matrix</a> and sum all elements, we will get the same result</li>
-</ol></div><div><hr></div><div><br></div></div></div></div></div></div></div><div class="heading-wrapper"><h1 data-heading="Go to other topics" class="heading" id="Go_to_other_topics">Go to other topics</h1><div class="heading-children"><div><div class="block-language-dataview node-insert-event"><ul class="dataview list-view-ul"><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - basics.md" data-href="uni/Discrete math/Graphs/Graphs - basics.md" href="uni/discrete-math/graphs/graphs-basics.html" class="internal-link" target="_self" rel="noopener">Graphs - basics</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - coloring.md" data-href="uni/Discrete math/Graphs/Graphs - coloring.md" href="uni/discrete-math/graphs/graphs-coloring.html" class="internal-link" target="_self" rel="noopener">Graphs - coloring</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - connectivity.md" data-href="uni/Discrete math/Graphs/Graphs - connectivity.md" href="uni/discrete-math/graphs/graphs-connectivity.html" class="internal-link" target="_self" rel="noopener">Graphs - connectivity</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - directed graphs, applications.md" data-href="uni/Discrete math/Graphs/Graphs - directed graphs, applications.md" href="uni/discrete-math/graphs/graphs-directed-graphs,-applications.html" class="internal-link" target="_self" rel="noopener">Graphs - directed graphs, applications</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - metrics.md" data-href="uni/Discrete math/Graphs/Graphs - metrics.md" href="uni/discrete-math/graphs/graphs-metrics.html" class="internal-link" target="_self" rel="noopener">Graphs - metrics</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - metrics2.md" data-href="uni/Discrete math/Graphs/Graphs - metrics2.md" href="uni/discrete-math/graphs/graphs-metrics2.html" class="internal-link" target="_self" rel="noopener">Graphs - metrics2</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - morphism.md" data-href="uni/Discrete math/Graphs/Graphs - morphism.md" href="uni/discrete-math/graphs/graphs-morphism.html" class="internal-link" target="_self" rel="noopener">Graphs - morphism</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - operations.md" data-href="uni/Discrete math/Graphs/Graphs - operations.md" href="uni/discrete-math/graphs/graphs-operations.html" class="internal-link" target="_self" rel="noopener">Graphs - operations</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - planarity.md" data-href="uni/Discrete math/Graphs/Graphs - planarity.md" href="uni/discrete-math/graphs/graphs-planarity.html" class="internal-link" target="_self" rel="noopener">Graphs - planarity</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - shortest path.md" data-href="uni/Discrete math/Graphs/Graphs - shortest path.md" href="uni/discrete-math/graphs/graphs-shortest-path.html" class="internal-link" target="_self" rel="noopener">Graphs - shortest path</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - trees.md" data-href="uni/Discrete math/Graphs/Graphs - trees.md" href="uni/discrete-math/graphs/graphs-trees.html" class="internal-link" target="_self" rel="noopener">Graphs - trees</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/Divisors, multiples, primes.md" data-href="uni/Discrete math/Number theory/Divisors, multiples, primes.md" href="uni/discrete-math/number-theory/divisors,-multiples,-primes.html" class="internal-link" target="_self" rel="noopener">Divisors, multiples, primes</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/Huffman codes.md" data-href="uni/Discrete math/Number theory/Huffman codes.md" href="uni/discrete-math/number-theory/huffman-codes.html" class="internal-link" target="_self" rel="noopener">Huffman codes</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/RSA, ECC.md" data-href="uni/Discrete math/Number theory/RSA, ECC.md" href="uni/discrete-math/number-theory/rsa,-ecc.html" class="internal-link" target="_self" rel="noopener">RSA, ECC</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/Residue classes, divisibility.md" data-href="uni/Discrete math/Number theory/Residue classes, divisibility.md" href="uni/discrete-math/number-theory/residue-classes,-divisibility.html" class="internal-link" target="_self" rel="noopener">Residue classes, divisibility</a></span></li></ul></div></div><div class="mod-footer"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+</ol></div><div><hr></div><div><br></div></div></div></div></div></div></div><div class="heading-wrapper"><h1 data-heading="Go to other topics" class="heading" id="Go_to_other_topics">Go to other topics</h1><div class="heading-children"><div><div class="block-language-dataview node-insert-event" style="overflow-x: auto;"><ul class="dataview list-view-ul"><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - basics.md" data-href="uni/Discrete math/Graphs/Graphs - basics.md" href="uni/discrete-math/graphs/graphs-basics.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - basics</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - coloring.md" data-href="uni/Discrete math/Graphs/Graphs - coloring.md" href="uni/discrete-math/graphs/graphs-coloring.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - coloring</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - connectivity.md" data-href="uni/Discrete math/Graphs/Graphs - connectivity.md" href="uni/discrete-math/graphs/graphs-connectivity.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - connectivity</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - directed graphs, applications.md" data-href="uni/Discrete math/Graphs/Graphs - directed graphs, applications.md" href="uni/discrete-math/graphs/graphs-directed-graphs,-applications.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - directed graphs, applications</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - metrics.md" data-href="uni/Discrete math/Graphs/Graphs - metrics.md" href="uni/discrete-math/graphs/graphs-metrics.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - metrics</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - metrics2.md" data-href="uni/Discrete math/Graphs/Graphs - metrics2.md" href="uni/discrete-math/graphs/graphs-metrics2.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - metrics2</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - morphism.md" data-href="uni/Discrete math/Graphs/Graphs - morphism.md" href="uni/discrete-math/graphs/graphs-morphism.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - morphism</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - operations.md" data-href="uni/Discrete math/Graphs/Graphs - operations.md" href="uni/discrete-math/graphs/graphs-operations.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - operations</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - planarity.md" data-href="uni/Discrete math/Graphs/Graphs - planarity.md" href="uni/discrete-math/graphs/graphs-planarity.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - planarity</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - shortest path.md" data-href="uni/Discrete math/Graphs/Graphs - shortest path.md" href="uni/discrete-math/graphs/graphs-shortest-path.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - shortest path</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Graphs/Graphs - trees.md" data-href="uni/Discrete math/Graphs/Graphs - trees.md" href="uni/discrete-math/graphs/graphs-trees.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FasDiagramProject" aria-label="FasDiagramProject" data-icon="FasDiagramProject" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"></path></svg></span>Graphs - trees</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/Divisors, multiples, primes.md" data-href="uni/Discrete math/Number theory/Divisors, multiples, primes.md" href="uni/discrete-math/number-theory/divisors,-multiples,-primes.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="TiBoxMultiple" aria-label="TiBoxMultiple" data-icon="TiBoxMultiple" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-multiple" width="16px" height="16px" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"></path><path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2"></path></svg></span>Divisors, multiples, primes</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/Huffman codes.md" data-href="uni/Discrete math/Number theory/Huffman codes.md" href="uni/discrete-math/number-theory/huffman-codes.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FabCodepen" aria-label="FabCodepen" data-icon="FabCodepen" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"></path></svg></span>Huffman codes</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/RSA, ECC.md" data-href="uni/Discrete math/Number theory/RSA, ECC.md" href="uni/discrete-math/number-theory/rsa,-ecc.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="TiAdjustmentsCode" aria-label="TiAdjustmentsCode" data-icon="TiAdjustmentsCode" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-code" width="16px" height="16px" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M6 4v4"></path><path d="M6 12v8"></path><path d="M13.557 14.745a2 2 0 1 0 -1.557 3.255"></path><path d="M12 4v10"></path><path d="M12 18v2"></path><path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M18 4v1"></path><path d="M18 9v4"></path><path d="M20 21l2 -2l-2 -2"></path><path d="M17 17l-2 2l2 2"></path></svg></span>RSA, ECC</a></span></li><li><span><a data-tooltip-position="top" aria-label="uni/Discrete math/Number theory/Residue classes, divisibility.md" data-href="uni/Discrete math/Number theory/Residue classes, divisibility.md" href="uni/discrete-math/number-theory/residue-classes,-divisibility.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="LiDivideSquare" aria-label="LiDivideSquare" data-icon="LiDivideSquare" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg></span>Residue classes, divisibility</a></span></li></ul></div></div><div class="mod-footer"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
 		<div class="graph-view-container">
 			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
 			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
