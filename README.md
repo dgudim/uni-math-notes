@@ -1,4 +1,4 @@
-# Obsidian math notes
+# Obsidian notes
 
 > These are my notes (originally math) exported from obsidian
 
